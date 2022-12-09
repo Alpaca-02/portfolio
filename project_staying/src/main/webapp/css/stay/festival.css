@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+#top_img, #menu_wrap, #top_img {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/* 상단 이미지 */
+#top_img {
+    height: 480px;
+}
+#top_img img {
+    height: 400px;
+}
+/* // 상단 이미지*/
+
+
+/* 축제  공연/전시 메뉴바*/
+#menu_wrap {
+    margin-top: 30px;
+}
+#menu_wrap > p {
+    text-align: center;
+    width: 100px;
+    margin: 0;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    border-top: 2px solid rgb(160, 160, 160);
+    cursor: pointer;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+#menu_wrap > p:nth-child(1) {
+    border-right: 1px solid rgb(160, 160, 160);
+    border-left: 2px solid rgb(160, 160, 160);
+    font-weight: bold;
+    background-color: #F8F9FA;
+}
+#menu_wrap > p:nth-child(2) {
+    border-right: 2px solid rgb(160, 160, 160);
+    border-left: 1px solid rgb(160, 160, 160);
+}
+/* // 축제  공연/전시 메뉴바*/
+
+
+/* 하단 축제  공연/전시 리스트 */
+.img_size {
+    height: 200px;
+}
+.card-body > h6 {
+    font-weight: bold;
+}
+.card-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    margin-top:1px;
+    max-height:80px;
+    overflow:hidden;
+    vertical-align:top;
+    text-overflow: ellipsis;
+    word-break:break-all;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3;
+}
+
+.exhibition_img {
+    height: 380px;
+}
+.exhibition_name {
+    overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+}
+#exhibition {
+    display: none;
+}

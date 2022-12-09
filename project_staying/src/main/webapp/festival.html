@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>축제/전시 공연 페이지</title>
+    <link rel="shortcut icon" href="images/Home/logo/staying.ico">
+
+    <!-- 공통 css -->
+    <link rel="stylesheet" type="text/css" href="css/stay/common.css">
+    <!-- 축제 공연/전시 css -->
+    <link rel="stylesheet" type="text/css" href="css/stay/festival.css">
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- 축제, 공연/전시 클릭시 화면 바뀜 -->
+    <script src="js/stay/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $('#menu_wrap > p:nth-child(1)').click(function() {
+                $('#festival').show();
+                $('#exhibition').hide();
+
+                $(this).css("background-color","#F8F9FA");
+                $('#menu_wrap > p:nth-child(2)').css("background-color","white");
+
+                $(this).css("font-weight","bold");
+                $('#menu_wrap > p:nth-child(2)').css("font-weight","normal");
+            })
+        });
+        $(function() {
+            $('#menu_wrap > p:nth-child(2)').click(function() {
+                $('#exhibition').show();
+                $('#festival').hide();
+
+                $(this).css("background-color","#F8F9FA");
+                $('#menu_wrap > p:nth-child(1)').css("background-color","white");
+
+                $(this).css("font-weight","bold");
+                $('#menu_wrap > p:nth-child(1)').css("font-weight","normal");
+            })
+        });
+    </script>
+</head>
+<body>
+    <!--건너뛰기 링크-->
+    <a id="skipNav" href="#contents_area">본문 바로가기</a>
+    <!--건너뛰기 링크 종료-->
+
+    <main>
+        <!-- 상단 이미지 -->
+        <section class="py-5 text-center container" id="top_img">
+            
+                
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/festival/Jeonju International Film Festival.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/festival/Jeonju Hanji Culture Festival.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/festival/Jeonju World Sound.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                
+        </section>
+        <!-- // 상단 이미지 -->
+
+        <!-- 메뉴바 -->
+        <div id="menu_wrap">
+            <p>축제</p><p>공연/전시</p>
+        </div>
+        <!-- // 메뉴바 -->
+
+        <!-- 하단 축제  공연/전시 리스트 -->
+        <!-- 축제 리스트 -->
+        <div class="album py-5 bg-light" id="festival">
+            <div class="container" id="contents_area">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top img_size" src="images/festival/Jeonju International Film Festival.jpg" alt="전국국제영화제">
+                            <div class="card-body">
+                                <h6>전국국제영화제</h6>
+                                <p class="card-text">전주의 모토는 동시대 영화 예술의 대안적 흐름과 독립·실험영화의 최전선에 놓인 작품들을 소개하는 것이다. 미래 영화의 주역이 될 수 있는 재능의 발굴, 창의적인 실험과 독립정신을 지지하며, 전 세계 영화작가들이 만나고 연대하는 기회를 제공한다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top img_size" src="images/festival/Jeonju Hanji Culture Festival.jpg" alt="전주한지문화축제">
+                            <div class="card-body">
+                                <h6>전주한지문화축제</h6>
+                                <p class="card-text">전주한지문화축제는 1997년 시작으로 천년전주 한지의 우수성을 널리 알리고, 전통한지공예 경진대회를 통하여 전국의 우수 공예인을 발굴하는 한편, 전주한지 산업화에 기여하고자 한다. 한지가 가지는 다양한 기능을 문화로 재해석하여 천년동안 사람과 함께 어울렸던 한지를 축제를 통해 표현하고 전주한지의 비전을 제시하고 교류하는 전주를 대표하는 축제이다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top img_size" src="images/festival/Samulnori.jpg" alt="전주대사습놀이">
+                            <div class="card-body">
+                                <h6>전주대사습놀이</h6>
+                                <p class="card-text">조선 정조 8년인 1784년에 시작되어 이백년이 넘게 우리 소리의 맥을 이어오고 있는 '전주대사습놀이' 가 그것인데, '전주대사습놀이'는 최고의 국악 명인, 명창을 뽑는 등용문이자 멋과 흥이 가득한 전통이 어우러진 우리의 아름다운 문화유산이다. 더불어 대사습놀이의 효율적인 전승차원에서 전도유망한 국악 동량들을 발굴하는 축제다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top img_size" src="images/festival/cultural heritage.jpg" alt="전주문화재야행">
+                            <div class="card-body">
+                                <h6>전주문화재야행</h6>
+                                <p class="card-text">밤의 경기전에서 가장 아름다운 전주를 만날 수 있는 전주문화재야행!  꼭 가봐야 할 야간명소, 2020 한국관광공사 야간관광 100선 선정에 빛나는 전주문화재야행! 다채로운 빛으로 수놓은 경기전의 입구를 지나는 순간 새로운 세상이 눈앞에 펼쳐진다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top img_size" src="images/festival/Jeonju World Sound.jpg" alt="전주세계소리축제">
+                            <div class="card-body">
+                                <h6>전주세계소리축제</h6>
+                                <p class="card-text">예로부터 전라북도는 ‘소리(판소리)’의 유구한 전통과 역사, 인물, 그리고 귀명창이라고 부르는 관객들의 두터운 소리 인프라를 지니고 있다. 이 ‘소리’ 자산은 전라북도를 대표하는 가장 중요한 문화적 자원으로 이해되고 발전시켜야 할 과제이고, 소리축제는 이러한 미션을 수행하는 전진기지이기도 하다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top img_size" src="images/festival/Reading.jpg" alt="전주독서대전">
+                            <div class="card-body">
+                                <h6>전주독서대전</h6>
+                                <p class="card-text">독서대전은 도서관을 중심으로 책으로 세상과 소통하는 문화적 매개체 역할을 하고, 독서의 가치를 새롭게 인식하고 전주형 독서공동체와 지역 콘텐츠를 담을 수 있는 지속 가능한 전주다운 책 축제를 만들어 간다. 책으로 미래를 여는 행복한 전주, ‘책읽는 도시 전주’ 구현을 위하여 함께 읽는 사회적 독서 가치를 실현해 보자. 또한 시민들의 적극적인 참여가 필요한 연중 독서진흥 프로그램이 3~ 10월까지 함께 진행 되고 있다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top img_size" src="images/festival/Bibimbap.jpg" alt="전주비빔밥축제">
+                            <div class="card-body">
+                                <h6>전주비빔밥축제</h6>
+                                <p class="card-text">전주의 가을은 맛있다.전주를 대표하는 음식축제인 ‘비빔밥축제’가 열리기 때문이다. 조선 3대 음식 중 으뜸으로 손꼽히고 있으며 대한민국 대표음식으로 외국인들이 가장 선호하는 전주비빔밥은 한국음식 BEST 1이다. 영국 3대 신문사 중 하나인 더 가디언(The Guardian)은 전주를 ‘대한민국 음식수도’이자 ‘한국에서 음식으로 대적할 곳이 없는 도시’라고 소개했다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top img_size" src="images/festival/intangible culture.jpg" alt="대한민국무형문화재대전">
+                            <div class="card-body">
+                                <h6>대한민국무형문화재대전</h6>
+                                <p class="card-text">대한민국 무형문화재대전은 전통문화 활성화 및 무형문화재 가치 확산을 위한 우리나라 무형문화재 대표행사로, 공연/전시/시연/체험 등 기•예능을 아우르는 종합축제이다. 각 기능 장인들의 합동 공개 행사 등을 볼 수 있다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 축제 리스트 -->
+
+        <!-- 공연/전시 -->
+        <div class="album py-5 bg-light" id="exhibition">
+            <div class="container" id="contents_area">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top exhibition_img" src="images/festival/exhibition01.jpg" alt="[전시] 내경편(內景編)과 우리 몸 바로알기">
+                            <div class="card-body">
+                                <h6 class=" exhibition_name">[전시] 내경편(內景編)과 우리 몸 바로알기</h6>
+                                <p class="card-text">전주의 모토는 동시대 영화 예술의 대안적 흐름과 독립·실험영화의 최전선에 놓인 작품들을 소개하는 것이다. 미래 영화의 주역이 될 수 있는 재능의 발굴, 창의적인 실험과 독립정신을 지지하며, 전 세계 영화작가들이 만나고 연대하는 기회를 제공한다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top exhibition_img" src="images/festival/exhibition02.jpg" alt="[공연] 미리 만나는「전주 미:친 축제 」">
+                            <div class="card-body">
+                                <h6 class=" exhibition_name">[공연] 미리 만나는「전주 미:친 축제 」</h6>
+                                <p class="card-text">전주한지문화축제는 1997년 시작으로 천년전주 한지의 우수성을 널리 알리고, 전통한지공예 경진대회를 통하여 전국의 우수 공예인을 발굴하는 한편, 전주한지 산업화에 기여하고자 한다. 한지가 가지는 다양한 기능을 문화로 재해석하여 천년동안 사람과 함께 어울렸던 한지를 축제를 통해 표현하고 전주한지의 비전을 제시하고 교류하는 전주를 대표하는 축제이다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top exhibition_img" src="images/festival/exhibition03.png" alt="[공연] 무형유산 특별기획공연 '장인의 발걸음(향상일로)'">
+                            <div class="card-body">
+                                <h6 class=" exhibition_name">[공연] 무형유산 특별기획공연 '장인의 발걸음(향상일로)'</h6>
+                                <p class="card-text">조선 정조 8년인 1784년에 시작되어 이백년이 넘게 우리 소리의 맥을 이어오고 있는 '전주대사습놀이' 가 그것인데, '전주대사습놀이'는 최고의 국악 명인, 명창을 뽑는 등용문이자 멋과 흥이 가득한 전통이 어우러진 우리의 아름다운 문화유산이다. 더불어 대사습놀이의 효율적인 전승차원에서 전도유망한 국악 동량들을 발굴하는 축제다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top exhibition_img" src="images/festival/exhibition04.jpg" alt="[공연] 2022 전주 조선팝 페스티벌(가을주간)">
+                            <div class="card-body">
+                                <h6 class=" exhibition_name">[공연] 2022 전주 조선팝 페스티벌(가을주간)</h6>
+                                <p class="card-text">밤의 경기전에서 가장 아름다운 전주를 만날 수 있는 전주문화재야행!  꼭 가봐야 할 야간명소, 2020 한국관광공사 야간관광 100선 선정에 빛나는 전주문화재야행! 다채로운 빛으로 수놓은 경기전의 입구를 지나는 순간 새로운 세상이 눈앞에 펼쳐진다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top exhibition_img" src="images/festival/exhibition05.png" alt="[공연] 2022 유네스코 인류무형유산 초청공연">
+                            <div class="card-body">
+                                <h6 class=" exhibition_name">[공연] 2022 유네스코 인류무형유산 초청공연</h6>
+                                <p class="card-text">예로부터 전라북도는 ‘소리(판소리)’의 유구한 전통과 역사, 인물, 그리고 귀명창이라고 부르는 관객들의 두터운 소리 인프라를 지니고 있다. 이 ‘소리’ 자산은 전라북도를 대표하는 가장 중요한 문화적 자원으로 이해되고 발전시켜야 할 과제이고, 소리축제는 이러한 미션을 수행하는 전진기지이기도 하다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top exhibition_img" src="images/festival/exhibition06.jpg" alt="[공연] 2022 전주독서대전 완판본문화관 기획전시 ‘완판본과 떠나는 전주 서포(書鋪) 여행’">
+                            <div class="card-body">
+                                <h6 class=" exhibition_name">[공연] 2022 전주독서대전 완판본문화관 기획전시 ‘완판본과 떠나는 전주 서포(書鋪) 여행’</h6>
+                                <p class="card-text">독서대전은 도서관을 중심으로 책으로 세상과 소통하는 문화적 매개체 역할을 하고, 독서의 가치를 새롭게 인식하고 전주형 독서공동체와 지역 콘텐츠를 담을 수 있는 지속 가능한 전주다운 책 축제를 만들어 간다. 책으로 미래를 여는 행복한 전주, ‘책읽는 도시 전주’ 구현을 위하여 함께 읽는 사회적 독서 가치를 실현해 보자. 또한 시민들의 적극적인 참여가 필요한 연중 독서진흥 프로그램이 3~ 10월까지 함께 진행 되고 있다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 공연/전시 -->
+    </main>
+</body>
+</html>

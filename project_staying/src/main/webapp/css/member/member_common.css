@@ -1,0 +1,41 @@
+#contents_area {
+    display: flex;
+    line-height: 1.5;
+    position: relative;
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.mypage_menu_area {
+    width: 18%;
+    text-align: right;
+    border-right: 1px solid #aaa;
+    padding-top: 140px;
+}
+.main_menu{
+    width: 100%;
+    padding: 0;
+}
+.main_menu > li:first-child {
+    border-bottom: 1px solid #aaa;
+    font-size: 19px;
+}
+.main_menu li {
+    padding: 15px 15px 10px 0;
+}
+.under_menu > li {
+    width: 100%;
+}
+.contents_info_area {
+    width: 80%;
+}
+.contents_info {
+    margin: 40px 50px;
+    padding-bottom: 80px;
+}
+.contents_info > h2 {
+    padding-top: 80px;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}

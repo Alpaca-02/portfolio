@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+#main_img, #manage_review_tab, #select_wrap, #review_wrap {
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/* 메인 이미지 영역 */
+.col-12 > h2 {
+    position: absolute;
+    margin: 30px 0 0 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#main_img {
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+#main_img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* // 메인 이미지 영역 */
+
+
+/* 객실관리, 리뷰 선택 영역 */
+#manage_review_tab {
+    margin-top: 50px;
+}
+.select:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+.select:nth-child(1) {
+    font-weight: bold;
+}
+/* // 객실관리, 리뷰 선택 영역 */
+
+
+/* 객실추가, 객실삭제 버튼 */
+#select_wrap {
+    margin-top: 20px;
+}
+.select_btn {
+    margin-right: 20px;
+    text-align: right;
+}
+#del_click, #canccle_click {
+    display: none;
+}
+/* // 객실추가, 객실삭제 버튼 */
+
+
+/* room info */
+#management {
+    width: 958px;
+    overflow: hidden;
+    margin: 20px 0 80px;
+    padding-left: 30px;
+}
+#management .table {
+    margin: 40px auto 50px;
+    width: 97%;
+}
+.hei {
+    height: 100px;
+    line-height: 100px;
+}
+.room_pic {
+    width: 150px;
+    height: 100px;
+}
+#flexCheckDefault {
+    margin: 45px 0 0 45px;
+}
+.del_click {
+    display: none;
+}
+.table > thead > tr > th:last-child > span{
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+#btn_remove_room {
+    display: none;
+}
+/* // room info */
+
+
+/* review */
+/* id, date */
+#review_wrap {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    display: none;
+}
+.reply{
+    position: relative;
+    margin-left: 50px;
+    border-top: 1px solid #333;
+}
+
+.review_content_btn {
+    width: 100%;
+
+    padding-bottom: 15px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.id_date_1line {
+    margin: 20px 0 0 30px;
+}
+.id_date_1line > span:first-child, .id_date_2line > span:first-child{
+    display: inline-block;
+    width: 15%;
+    margin-right: 15px;
+    vertical-align: top;
+}
+.id_date_2line {
+    min-height: 80px;
+    margin: 30px 0 0 30px;
+}
+.id_date_2line > div.review_content {
+    display: inline-block;
+    width: 60%;
+    min-height: 120px;
+    padding: 5px;
+    line-height: 1.5;
+}
+div.review_content > img {
+    width: 80%;
+    padding: 10px;
+}
+/*.id_date_2line > span:nth-last-child(1) {
+    display: inline-block;
+    width: 60%;
+    height: 120px;
+    padding: 5px;
+    line-height: 1.5;
+}*/
+.id_date_btn {
+    width: 90%;
+    text-align: right;
+}
+
+
+
+/* // id, date */
+.owner{
+    display: none;
+    width: 750px;
+    margin-left: 200px;
+    padding-top: 30px;
+}
+.owner p:nth-child(1) {
+    margin-left: 10px;
+}
+.owner textarea {
+    width: 87%;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+    padding: 5px;
+    resize: none;
+}
+.owner_btn {
+    text-align: right;
+    margin-bottom: 0;
+}
+.owner button {
+    margin-right: 100px;
+}
+/* // review */
+
+
+
+.view_star{
+	display:inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.view_star > .back_star_wrap {
+    color: #ccc;
+    margin-right: 10px;
+}
+.view_star > .front_star_wrap {
+    position: absolute;
+    color: rgb(255, 204, 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+

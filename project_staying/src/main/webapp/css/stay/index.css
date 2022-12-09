@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+#controller, #best_hotel_wrap, #exhibition, #festival {
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* 테스트  컨트롤러 이미지에 가리는용 */
+#container {
+    position: relative;
+    top: -80px;
+}
+
+/*메인 이미지 영역 시작*/
+#main_img {
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+#main_img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*메인 이미지 영역 종료*/
+
+
+/*컨트롤러 영역 시작*/
+#controller {
+    width: 960px;
+}
+.controller_wrap {
+    margin-top: 12px;
+    height: 125px;
+    background-color: rgb(213, 239, 248);
+    overflow: hidden;
+}
+.lodging_wrap{
+    height: 85px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+.icon:hover {
+    cursor: pointer;
+}
+.icon {
+    text-align: center;
+}
+.icon > img {
+    width: 40px;
+    height: 40px;
+    margin-top: 22.5px;
+}
+
+.stay_search_area {
+    margin: 30px auto;
+    height: 30px;
+}
+.stay_search_area > label > span {
+    position: relative;
+    right: -30px;
+    color: #333;
+}
+.stay_search_area > label > input {
+    width: 120px;
+    height: 35px;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+#selected {
+    background-color: white;
+}
+#datepicker1, #datepicker2 {
+    width: 150px;
+}
+.btn_stay_search {
+    width: 45px;
+    height: 37px;
+    margin-left: 15px;
+    background-color: #48a8ed10;
+    border: 2px solid #48a8ed7e;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#search_btn {
+    color: #48a9ed;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+/*컨트롤러 영역 종료*/
+
+
+/*인기숙소 영역 시작*/
+#best_hotel_wrap {
+    height: 340px;
+    margin-top: 70px;
+    overflow: hidden;
+}
+#best_hotel_wrap > div {
+    height: 340px;
+}
+.best_hotel > h2, .best_pension > h2, .best_camping > h2, .best_hanok > h2 {
+    height: 40px;
+    padding-left: 21px;
+    font-size: 21px;
+    font-weight: 600;
+    text-shadow: 3px 3px 6px #ccc;
+}
+.room_pic {
+    width: 150px;
+    height: 165px;
+    margin: 0 auto;
+}
+.room_pic > img {
+    width: 150px;
+    height: 165px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 5px #ccc;
+    border-radius: 4px 4px;
+    object-fit: cover;
+}
+.room>a{
+    text-decoration: none;
+}
+.room >a> p {
+    text-decoration: none;
+    color: #000;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 13px;
+    text-shadow: 3px 3px 5px #ccc;
+}
+.hotel_name, .pension_name, .camping_name, .hanok_name {
+    font-weight: bold;
+}
+/*인기숙소 영역 종료*/
+
+
+#un_left {
+    margin-left: 4px;
+}
+/*공연/전시 영역 시작*/
+#exhibition {
+    width: 574px;
+    /*height: 230px;*/
+}
+/*
+.exhibition_wrap {
+    height: 230px;
+}*/
+.exhibition {
+    width: 180px;
+}
+.exhibition_pic {
+    width: 180px;
+    /*height: 165px;*/
+}
+.exhibition_pic > img {
+    width: 180px;
+    height: 245px;
+    /*height: 165px;*/
+    border-radius: 3px;
+}
+.exhibition > p {
+    width: 180px;
+    text-align: center;
+    font-size: 13px;
+    margin: 0;
+}
+.exhibition_name {
+    font-weight: bold;
+}
+/*공연/전시 영역 종료*/
+
+
+/*축제 영역 시작*/
+#festival {
+    width: 574px;
+    height: 230px;
+}
+.festival_wrap {
+    height: 230px;
+}
+.festival {
+    width: 180px;
+}
+.festival1_pic {
+    width: 180px;
+    height: 165px;
+}
+.festival > div > img {
+    width: 180px;
+    height: 165px;
+    border-radius: 3px;
+}
+.festival > p {
+    width: 180px;
+    text-align: center;
+    font-size: 13px;
+    margin: 0;
+}
+.festival_name {
+    font-weight: bold;
+}
+/*축제 영역 종료*/
+
+
+/* 인기 숙소, 공연/전시, 축제 공통 */
+article {
+    margin-bottom: 70px;
+}
+
+
+/* 우측 하단 */
+#event_wrap img {
+    width: 264px;
+    margin-bottom: 19px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/*
+#place > p, #history > p, #landmark > p {
+    margin-bottom: 5px;
+}
+.fa-thumbs-up {
+    color: #ee3366;
+}
+.fa-utensils {
+    color: #ee3366;
+}
+*/
+

@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+html, body, div, form, fieldset, p {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#wrap {
+    width: 960px;
+    height: 650px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/*본문*/
+#login_wrap {
+    width: 50%;
+    position: relative;
+    left: 40px;
+    margin: auto;
+    text-align: center;
+}
+#login_wrap > img {
+    width: 50%;
+}
+.login {
+    position: absolute;
+    padding-top: 50px;
+    top: 140px;
+    height: 370px;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    /*border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    */
+}
+.business_login {
+    padding-top: 65px;
+    height: 355px;
+}
+.member_login {
+    z-index: 10;
+}
+.member_login > h2 {
+    left: -1px;
+}
+.business_login > h2 {
+    right: -1px;
+}
+#login_wrap > .login > h2 {
+    position: absolute;
+    top: -70px;
+    width: 199px;
+    padding: 17px 0;
+    display: inline-block;
+    z-index: 50;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border: 1px solid #bbb;
+    border-top: 3px solid #bbb;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+#login_wrap > .login > h2.target {
+    z-index: 20;
+    border-bottom-color: #fff;
+    border-top: 3px solid #48a9ed;
+    background-color: #fff;
+    color: #48a9ed;
+    cursor: pointer;
+}
+#login_wrap > .login > h2:not([class="target"]) {
+    border-color: #e6e6e6;
+    border-bottom-color: #bbb;
+    border-top: 3px solid #e6e6e6;
+    background-color: #e6e6e6;
+    color: #666;
+    font-weight: 400;
+}
+.login_form {
+    text-align: center;
+}
+fieldset {
+    border: none;
+}
+.title {
+    width: 400px;
+    margin-bottom: 15px;
+}
+.business_login > .title {
+    margin-bottom: 20px;
+}
+.title > label {
+    display: inline-block;
+    width: 270px;
+    margin-bottom: 3px;
+    text-align: left;
+    color: #777777;
+    font-size: 0.9rem;
+}
+.business_login > .title > label {
+    margin-bottom: 5px;
+}
+.title > input {
+    padding: 5px 13px;
+    width: 240px;
+    height: 21px;
+}
+fieldset > input[type="button"] {
+    margin-top: 10px;
+    width: 270px;
+    height: 37px;
+    background-color: #48a9ed;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.business_login > fieldset > input[type="button"] {
+    margin-top: 20px;
+}
+hr {
+    width: 90%;
+    margin: 15px auto;
+    background:#ccc;
+    height: 1px;
+    border: none;
+}
+.business_login > hr {
+    margin: 25px auto;
+}
+#join {
+    display: block;
+    margin: 0 auto;
+    width: 268px;
+    height: 35px;
+    background-color: #777777;
+    color: white;
+}
+#naverIdLogin {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 268px;
+    height: 35px;
+    border: 1px solid rgb(40,209,17);
+    background-color: rgb(40,209,17);
+    color: white;
+}
+#naver_id_login{
+    display: none;
+}

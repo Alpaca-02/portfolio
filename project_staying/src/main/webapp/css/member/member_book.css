@@ -1,0 +1,172 @@
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+.mypage_menu_area {
+    padding-top: 156px;
+}
+.under_menu > li:first-child > a:hover {
+    color: #000;
+}
+.under_menu > li:last-child {
+    width: 100%;
+    border-left: 3px solid rgba(237, 56, 46, 0.918);
+    text-align: center;
+}
+.under_menu > li:last-child a {
+    color: rgba(237, 56, 46, 0.918);
+}
+.contents_info > h2 {
+    padding-top: 85px;
+}
+.book_room_area {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 0;
+    margin-bottom: 20px;
+}
+.book_room_image {
+    position: relative;
+    display: inline-block;
+    width: 36%;
+    height: 75%;
+    vertical-align: top;
+    overflow: hidden;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.book_room_image > img {
+    width: 137%;
+    position: relative;
+    left: -17%;
+}
+.book_room_content {
+    display: inline-block;
+    width: 60%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+}
+.book_room_title {
+    font-size: 1.2rem;
+}
+.book_room_name {
+    font-size: 0.9rem;
+    padding: 10px 0;
+}
+.book_room_l > p {
+    line-height: 2;
+}
+.book_room_checktime {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+.book_room_checktime th{
+    color: #666;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.book_room_checktime td {
+    font-size: 1.1rem;
+}
+.book_room_checktime td:first-child , .book_room_checktime th:first-child{
+    padding-left: 7px;
+    padding-right: 15px;
+}
+.book_room_checktime td:last-child, .book_room_checktime th:last-child {
+    padding-left: 15px;
+    padding-right: 7px;
+}
+.review_cancle_area::before {
+    clear: both;
+}
+.review_cancle_area{
+    text-align: right;
+    font-size: 0.85rem;
+}
+.review_cancle_area > a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: #121212;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.review_cancle_area > a:first-child {
+    color: #121212;
+    margin-right: 15px;
+}
+.review_cancle_area > a:first-child:hover {
+    color: #48a8ed;
+    text-decoration: underline;
+}
+.review_cancle_area > a:hover {
+    color: #48a8ed;
+    text-decoration: underline;
+}
+/* .no_book_room {
+    display: none;
+} */
+
+.no_book_room {
+    width: 100%;
+}
+.no_room_content {
+	text-align:center;
+    padding: 20%;
+}
+.no_room_content > p {
+    font-size: 1.1rem;
+    padding-bottom: 30px;
+    
+    
+}
+.no_room_content > a {
+    background-color: #48a8ed31;
+    border: 1px solid #48a8ed;
+    color: #121212;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 20px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.no_room_content > a:hover {
+    background-color: #48a8ed;
+    color: #fff;
+}
+
+/*리뷰 모달*/
+.star {
+    float: left;  
+    padding: 5px 10px;  
+}
+
+.modal-dialog form {
+    width: 95%;
+}
+.modal-body textarea {
+    resize: none;
+    height: 100px;
+}
+.mb-3 > img {
+    width: 86%;
+    margin: 0 10% 15px;
+}

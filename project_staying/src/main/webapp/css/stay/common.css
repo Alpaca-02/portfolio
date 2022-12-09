@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/*공통 적용*/
+html, body, a, div, header, h1, nav, input, section, h2, form
+, p, button, span, table, td, tr, footer {
+    margin: 0;
+    padding: 0;
+}
+a, a:hover, a:focus, a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.hidden, legend, caption {
+    position: absolute;
+    left: -9999px;
+}
+ul{
+    list-style: none;
+}
+fieldset{
+    border: 0;
+}
+
+/*건너뛰기 링크*/
+#skipNav{
+    position: absolute;
+    left: -9999px;
+}
+#skipNav:focus{
+    left: 50%;
+    margin: 0 0 0 -3em;
+    padding: 5px 15px;
+    background-color: #000;
+    color: #fff;
+    outline: 0;
+    z-index: 10;
+}
+
+
+/*레이아웃*/
+header, footer, body, html, #wrapper{
+    width: 100%;
+    min-width: 960px;
+}
+#contents_area, #footer_inner, #inner_header{
+    width: 960px;
+    margin: 0 auto;
+}
+#contents_area {
+    padding-bottom: 60px;
+}
+/*
+ 글 색: #eff500
+ 배경색: #48a9ed
+*/
+
+/*header*/
+header{
+    height: 60px;
+    background-color: #48a9ed;
+    position: relative;
+}
+#inner_header {
+    position: relative;
+    height: 100%;
+}
+.logo {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    
+}
+.logo a {
+    vertical-align: middle;
+}
+.logo img {
+    height: 45px;
+    vertical-align: middle;
+}
+header nav{    
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+nav > a {
+    vertical-align: middle;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    background-color: #48a9ed;
+    text-decoration: none;
+}
+nav > a:hover {
+    color: #222;
+}
+
+/*footer 영역 시작*/
+footer {
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    color: #aaa;
+    height: 250px;
+}
+#footer_inner {
+    height: 100%;
+}
+.page_info_area {
+    display: inline-block;
+    width: 65%;
+    margin-right: 4%;
+    margin-top: 50px;
+}
+.page_info_area img{
+    height: 45px;
+}
+.page_info {
+    margin-top: 30px;
+}
+.page_info {
+    line-height: 1.8;
+    font-size: 0.9rem;
+}
+.cs_info_area {
+    display: inline-block;
+    width: 30%;
+    margin-top: 50px;
+}
+.cs_info_area .cs_info td {
+    padding: 0.2rem 0.5rem;
+}
+.cs_info_area .cs_info tr td:first-child {
+    font-weight: 600;
+    color: #ccc;
+}

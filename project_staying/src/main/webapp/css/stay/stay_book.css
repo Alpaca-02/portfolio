@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+
+/* 좌측 예약자, 결제 정보란 */
+#contents_area {
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+#info {
+    float: left;
+    width: 600px;
+}
+
+
+/* 예약자 정보 */
+.reserve_info {
+    height: 230px;
+}
+.reserve_info > h2 {
+    height: 30px;
+    font-size: 21px;
+    font-weight: 500;
+}
+#login_form {
+    height: 200px;
+}
+.name, .tel {
+    height: 100px;
+}
+.name > label, .tel > label {
+    display: inline-block;
+    width: 580px;
+    margin: 10px 0 10px 20px;
+}
+.name > input, .tel > input {
+    width: 175px;
+    height: 32px;
+    padding-left: 25px;
+}
+.name > i, .tel > i {
+    position: relative;
+    left: 25px;
+}
+.tel > label > span {
+    margin-left: 20px;
+    font-size: 10px;
+}
+/* // 예약자 정보 */
+
+
+/* 결제 정보 */
+.payment_info {
+    height: 140px;
+    margin-top: 60px;
+}
+.payment_info > h2 {
+    height: 30px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.form_check_wrap {
+    height: 30px;
+    margin-top: 30px;
+}
+.form_check_wrap > div {
+    display: inline-block;
+    margin-left: 20px;
+}
+/* // 결제 정보 */
+
+/*
+.payment {
+    height: 190px;
+    margin-top: 30px;
+}
+.pay1 > p {
+    height: 40px;
+}
+.pay1 > p > label {
+    display: inline-block;
+    margin-left: 20px;
+}
+.pay1 > p > select {
+    width: 150px;
+    display: inline-block;
+    margin-left: 15px;
+} 
+.pay1 p:nth-child(2) input {  입금자명 라인
+    margin-left: 20px;
+    width: 150px;
+}
+.pay1 p:nth-child(3) {  입금계좌 라인
+    margin-left: 20px;
+}
+
+.pay2 {
+    display: none;
+}
+.pay2 > p {
+    height: 40px;
+}
+.pay2 > p > label {
+    display: inline-block;
+    margin-left: 20px;
+}
+.pay2 > p > select {
+    width: 150px;
+    display: inline-block;
+    margin-left: 15px;
+}  
+
+.agree {
+}
+.agree > .form-check {
+    margin-left: 20px;
+    height: 30px;
+}
+.agree > .form-check > label {
+    width: 180px;
+}
+.agree > .form-check > span {
+    font-size: 12px;
+    cursor: pointer;
+    color: blue;
+}
+#agr_content {
+    overflow: scroll;
+    width: 580px;
+    height: 180px;
+    margin: 15px 0 0 20px;
+    border: 1px solid #888;
+    display: none;
+} */
+
+/* 약관 동의 */
+.clause_area {
+    width: 300px;
+}
+input[type="checkbox"]{
+    zoom: 1.5;
+    width: auto;
+    margin: 1%;
+}
+.clause_check_label {
+    margin-left: 2%;
+}
+
+.accordion{
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+.accordion-item:first-of-type .accordion-button, .accordion-item:last-of-type {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+}
+.accordion-button {
+    padding: 10px 13px;
+}
+.accordion-button:focus, .accordion-collapse:focus, .accordion-item{
+    border: none;
+}
+.accordion-body{
+    padding: 5px 13px;
+}
+.clause_content {
+    height: 70px;
+    overflow-y: scroll;
+    text-align: left;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 0.8rem;
+    color: #333;
+}
+/* // 약관동의 */
+
+
+/* 결제버튼*/
+.room_pay {
+    width: 260px;
+    height: 40px;
+    margin: 50px 0 0 20px;
+    text-align: center;
+}
+.room_pay > button {
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 40px;
+    background-color: rgb(83, 153, 219);
+    color: white;
+}
+/* // 결제버튼 */
+/* // 좌측 예약자, 결제 정보란 */
+
+/* 우측 숙소 정보란 */
+#room_info {
+    float: left;
+    width: 360px;
+    height: 580px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 3px;
+}
+#room_info::after {
+    clear: both;
+}
+.room_info_wrap {
+    margin: 20px auto;
+    width: 300px;
+    height: 540px;
+}
+.room_info_pic {
+    text-align: center;
+    margin-left: 20px;
+    width: 260px;
+    height: 180px;
+}
+.room_info_pic > img {
+    width: 250px;
+    height: 180px;
+}
+.room_info_wrap > .room_info_data {
+    margin: 20px 0 0 20px;
+    width: 260px;
+    height: 270px;
+}
+.room_info_data > p {
+    height: 20px;
+}
+.room_name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.room_type {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.room_in, .room_out {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.date {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.total {
+    text-align: right;
+    font-weight: bold;
+    margin: 50px 10px 0 0;
+    font-size: 20px;
+}
+/* // 우측 숙소 정보란 */

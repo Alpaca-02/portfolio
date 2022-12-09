@@ -1,0 +1,64 @@
+/*숙소 이미지 슬라이드*/
+.stay_image_swiper_area{
+  display: inline-block;
+  position: relative;
+  width: 30%;
+}
+
+.stay_image_swiper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.stay_image_swiper_area .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.stay_image_swiper_area .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stay_image_swiper_area .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.stay_image_swiper_top {
+  height: 80%;
+}
+
+.stay_image_swiper_bottom {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.stay_image_swiper_bottom .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.stay_image_swiper_bottom .swiper-slide-thumb-active {
+  opacity: 1;
+}
