@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacaBooks</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/paca_icon.ico">
+    <!-- css 호출 -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- 스크립트 호출 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+
+    <!-- 적응형 웹 스크립트-->
+    <script>
+        let smartPhones = [
+            'iphone','ipod','ipad','opera mini','opera mobi','nokia','android','webos','windows ce','blackberry','iemobile','sonyericsson'
+        ];
+        // // 기종 확인
+        // let user = navigator.userAgent;
+        // alert(user)
+
+        // 스마트폰 구분
+        for(let i in smartPhones) {
+            // navigator.userAgent => 기기 정보  lowercase로 전부 소문자로 바꿔서 비교
+            if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhones[i]))){
+                document.location='http://alpaca02.dothome.co.kr/mindex.html';
+            }
+        }
+    </script>
+
+
+    <!--웹폰트 링크 연결-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- 건너뛰기 링크 (Tab키로 영역링크 / 웹 접근성) -->
+    <!-- 내부점프 a태그 -->
+    <div id="skipNav">
+        <a class="skipToday" href="#todayBook">오늘의 책</a>
+        <a class="skipNormal" href="#normalBest">일반도서 BEST</a>
+        <a class="skipBest" href="#bestSeller">베스트 셀러</a>
+        <a class="skipNotice" href="#notice">공지사항</a>
+    </div>
+    <!-- 건너뛰기 링크 종료 -->
+
+    
+    <div id="wrapper">
+        <!-- 헤더 영역 -->
+        <header>
+            <!--로고, 검색, 아이콘 영역 시작 -->
+            <div id="titleOut">
+                <div id="title">
+                    <!-- 로고 영역 시작-->
+                    <h1><a href="index.html"><img src="images/title/PacaBooks-hor.png" alt="logo"></a></h1>
+                    <!-- 로고 영역 종료 -->
+                    <!-- /////////////////////////////////////-->
+                    <!-- 검색 영역 시작 -->
+                    <div id="search">
+                        <h2 class="hidden">책 검색</h2>
+                        <form action="search.jsp" method="get" id="searchForm">
+                            <fieldset>
+                                <legend>검색창</legend>
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i><span class="hidden">검색</span></button>
+                                <input type="search" id="keyword" name="keyword" required>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <!-- 검색 영역 종료 -->
+                    <!--/////////////////////////////////////-->
+                    <!-- 아이콘 영역 시작 -->
+                    <div id="mainIcon">
+                        <h2 class="hidden">메인 아이콘</h2>
+                        <ul>
+                            <li class="notice"><i class="fa fa-bell" aria-hidden="true"></i><span class="hidden">알림</span></li>
+                            <div class="myNotice">
+                                <ul>
+                                    <li>알림이 없습니다.</li>
+                                </ul>
+                            </div>
+                            <li class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="hidden">카트</span></li>
+                            <div class="myCart">
+                                <ul>
+                                    <li>카트가 비어있습니다.</li>
+                                </ul>
+                            </div>
+                            <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden">마이페이지</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- 아이콘 영역 종료 -->
+                </div>
+            </div>
+            <!--로고, 검색, 아이콘 영역 종료 -->
+            <!--//////////////////////////////////////////////////-->
+            <!-- 메뉴바 영역 시작 -->
+            <nav id="menuBar">
+                <div class="dropDown">
+                <h2><i class="fa fa-bars" aria-hidden="true"></i><span class="hidden">메뉴바</span></h2>
+                    <div class="menuBar_drop">
+                        <a href="#">소설</a>
+                        <a href="#">에세이/시</a>
+                        <a href="#">인문/사회/역사</a>
+                        <a href="#">만화</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- 메뉴바 영역 종료 -->
+
+        </header>
+        <!-- 헤더 영역 종료 -->
+        
+        <!------------------------------------------------------------->
+
+        <!-- 배너 영역 시작 -->
+        <div id="banner">
+            <h2 class="hidden">메인 배너</h2>
+                <div class="banner banner1">
+                    <div>
+                        <h3>친밀한  이방인</h3>
+                        <p>화제의 드라마 &lt;안나&gt; 원작</p>
+                    </div>
+                </div>
+            <div class="banner banner2">
+                <div>
+                    <h3>역행자</h3>
+                    <p>돈.시간.운명으로부터 완전한 자유를 얻는 7단계 인생 공략집</p>
+                </div>
+            </div>
+            <div class="banner banner3">
+                <div>
+                    <h3>모든 것은 기본에서 시작한다</h3>
+                    <p>자신의 삶에 대한 반성과 성찰로 빚어낸 강건한 신념과 철학!</p>
+                </div>
+            </div>
+            <div class="banner banner4">
+                <div>
+                    <h3>인플레이션에서 살아남기</h3>
+                    <p>"애프터 인플레, 누가 돈을 벌까?"</p>
+                </div>
+            </div>
+            <div class="banner banner5">
+                <div>
+                    <h3>홍학의 자리</h3>
+                    <p>한국 미스터리 사상 전무후무한 반전과 예측 불가능한 결말!</p>
+                </div>
+            </div>
+            <div class="bannerBtn leftBtn"><span class="hidden">좌측버튼</span><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+            <div class="bannerBtn rightBtn"><span class="hidden">우측버튼</span><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+        </div>
+
+        <!-- 배너 영역 종료 -->
+
+        <!----------------------------------------------------->
+
+        <!-- 메인 영역 시작 -->
+        <div id="contentArea">
+            <!-- 오늘의 책 영역 시작-->
+            <section id="todayBook">
+                <h3>오늘의 책</h3>
+                <!--하단바-->
+                <div id="downBar"></div>
+                <!--책 이미지-->
+                <div id="bookImg">
+                    <div id="img1">
+                        <a href="book_info/far_alone.html"><img src="images/todayBook/저만치_혼자서.jpg" alt="저만치 혼자서"></a>
+                        <div class="innerImg">
+                            <a href="book_info/far_alone.html">
+                                <h4>[강산무진] 이후 16년, 김훈 두번째 소설집</h4><br>
+                                <p>비루한 인간사를 허무하게 바라보던 김훈의 시선은 16년의 세월을 지나며 조금 더 애틋해진 듯 하다. 물론 [저만치 혼자서]에서도 인간의 생애는 그들의 고통이나 절망과 관계없이 무심하게 흐르고, 시간은 살아가는 요령을 알려주는 대가로 그들의 신체를 허물어갈 뿐이다.</p>
+                                <p class="innerTitle"><span>저만치 혼자서</span><br>김훈 저 | 문학동네</p>
+                                <div class="tri"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--
+                    <div id="img2">
+                        <a href="book_info/spyfamily.html"><img src="images/todayBook/스파이패밀리.jpg" alt="스파이패밀리"></a>
+                        <div class="innerImg">
+                            <a href="">
+                                <h4>제 9권 온/오프 동시 발매!</h4><br>
+                                <p>능력자 스파이 &lt;황혼&gt;은, 보다 좋은 세상을 만들기 위해 매일 첩보임무를 하고 있었다. 어느날, 새로운 곤란한 지령이 떨어지는데... 임무를 위해, 가짜 가족을 만들어, 새로운 생활이 시작되지만?! 화제의 스파이X액션X특수가족 코미디! 제 9권 온/오프 동시 발매!</p>
+                                <p class="innerTitle"><span>스파이 패밀리 09권</span><br>ENDO Tatsuya 저 | 학산문화사/DCW</p>
+                                <div class="tri2"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="img3">
+                        <img src="images/todayBook/류.jpg" alt="류">
+                        <div class="innerImg">
+                            <a href="">
+                                <h4>심사위원 만장일치로 선정된 나오키상 수상작!</h4><br>
+                                <p>"몇십 년 만에 한 번 나올 만한 전대미문의 걸작" 1970~80년대를 배경으로, 할아버지의 죽음을 목격한 주인공이 살인범을 추적하는 과정을 그린 미스터리이자 시대물. 할아버지를 죽인 범인의 단서가 삐죽 머리를 내밀 때마다 급류에 휘말리듯 사건의 중심으로 빨려들어 간다!</p>
+                                <p class="innerTitle"><span>류</span><br>히가시야마 아키라 저/민경욱 역 | 해피북스투유</p>
+                            </a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                <!--사이드 메뉴-->
+                <div id="bookSide">
+                    <div class="side side1">
+                        <span><img src="images/todayBook/저만치_혼자서.jpg" alt="저만치 혼자서"></span>
+                        <h4><span>[강산무진] 이후 16년,<br>김훈 두번째 소설집</span></h4>
+                    </div>
+                    <div class="side side2">
+                        <span><img src="images/todayBook/스파이패밀리.jpg" alt="스파이패밀리"></span>
+                        <h4><span>제 9권<br>온/오프 동시발매</span></h4>
+                    </div>
+                    <div class="side side3">
+                        <span><img src="images/todayBook/류.jpg" alt="류"></span>
+                        <h4><span>심사위원 만장일치로 선정된 나오키상 수상작!</span></h4>
+                    </div>
+                </div>
+            </section>
+            <!-- 오늘의 책 영역 종료-->
+            <!--/////////////////////////////////-->
+            <!-- 일반도서 영역 시작 -->
+            <section id="normalBest">
+                <div class="normalBest_title">
+                    <h3>일반도서Best</h3>
+                    <div class="day">
+                        <div>일간</div>
+                        <div>주간</div>
+                        <div>월간</div>
+                    </div>
+                </div>
+                <div class="normalList">
+                    <ol class="normalBest dayBest">
+                        <li>
+                            <a href="book_info/reverse.html"><img src="images/dayBest/역행자.jpg" alt="역행자"></a>
+                            <p><a href="book_info/reverse.html"><strong>역행자</strong><br>자청</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/close_stranger.html"><img src="images/dayBest/친밀한이방인.jpg" alt="친밀한 이방인"></a>
+                            <p><a href="book_info/close_stranger.html"><strong>친밀한 이방인</strong><br>정한아</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/inflation.html"><img src="images/dayBest/인플레이션에서_살아남기.jpg" alt="인플레이션"></a>
+                            <p><a href="book_info/inflation.html"><strong>인플레이션에서 살아남기</strong><br>오건영</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/natural_detergents.html"><img src="images/dayBest/천연_세제_생활.jpg" alt="천연세제생활"></a>
+                            <p><a href="book_info/natural_detergents.html"><strong>천연 세제 생활</strong><br>박철원</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/convenience.html"><img src="images/dayBest/불편한_편의점.jpg" alt="불편한 편의점"></a>
+                            <p><a href="book_info/convenience.html"><strong>불편한 편의점</strong><br>김호연</a></p>
+                        </li>
+                    </ol>
+
+
+                    <ol class="normalBest weekBest">
+                        <li>
+                            <a href="book_info/reverse.html"><img src="images/dayBest/역행자.jpg" alt="역행자"></a>
+                            <p><a href="book_info/reverse.html"><strong>역행자</strong><br>자청</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/inflation.html"><img src="images/dayBest/인플레이션에서_살아남기.jpg" alt="인플레이션"></a>
+                            <p><a href="book_info/inflation.html"><strong>인플레이션에서 살아남기</strong><br>오건영</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/sonMoney.html"><img src="images/dayBest/아들아_돈공부_해야한다.jpg" alt="아들아 돈공부 해야한다"></a>
+                            <p><a href="book_info/sonMoney.html"><strong>아들아, 돈공부 해야한다</strong><br>정선용(정스토리)</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/goodbye.html"><img src="images/dayBest/작별인사.jpg" alt="작별인사"></a>
+                            <p><a href="book_info/goodbye.html"><strong>작별인사</strong><br>김영하</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/convenience.html"><img src="images/dayBest/불편한_편의점.jpg" alt="불편한 편의점"></a>
+                            <p><a href="book_info/convenience.html"><strong>불편한 편의점</strong><br>김호연</a></p>
+                        </li>
+                    </ol>
+
+
+                    <ol class="normalBest monthBest">
+                        <li>
+                            <a href="book_info/reverse.html"><img src="images/dayBest/역행자.jpg" alt="역행자"></a>
+                            <p><a href="book_info/reverse.html"><strong>역행자</strong><br>자청</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/inflation.html"><img src="images/dayBest/인플레이션에서_살아남기.jpg" alt="인플레이션"></a>
+                            <p><a href="book_info/inflation.html"><strong>인플레이션에서 살아남기</strong><br>오건영</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/goodbye.html"><img src="images/dayBest/작별인사.jpg" alt="작별인사"></a>
+                            <p><a href="book_info/goodbye.html"><strong>작별인사</strong><br>김영하</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/convenience.html"><img src="images/dayBest/불편한_편의점.jpg" alt="불편한 편의점"></a>
+                            <p><a href="book_info/convenience.html"><strong>불편한 편의점</strong><br>김호연</a></p>
+                        </li>
+                        <li>
+                            <a href="book_info/one_thing.html"><img src="images/dayBest/원씽.jpg" alt="원씽"></a>
+                            <p><a href="book_info/one_thing.html"><strong>원씽(The One Thing)</strong><br>게리 켈러</a></p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <!-- 일반도서 영역 종료 -->
+            <!--///////////////////////////////////-->
+            <!-- 베스트 셀러 영역 시작 -->
+            <section id="bestSeller">
+                <h3>베스트 셀러</h3>
+                <div class="bestTop">
+                    <div class="bestMenu" id="novel">
+                        <h4>소설</h4>
+                        <div class="bestBook">
+                            <ol>
+                                <li>
+                                    <a href="book_info/close_stranger.html">
+                                        <img src="images/bestSeller/novel/친밀한이방인.jpg" alt="친밀한이방인">
+                                        <p class="title"><strong>친밀한 이방인</strong><br>정한아 저</p>
+                                        <p class="price">13000원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="book_info/goodbye.html">
+                                        <img src="images/bestSeller/novel/작별인사.jpg" alt="작별인사">
+                                        <p class="title"><strong>작별인사</strong><br>김영하</p>
+                                        <p class="price">14000원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="book_info/convenience.html">
+                                        <img src="images/bestSeller/novel/불편한_편의점.jpg" alt="불편한편의점">
+                                        <p class="title"><strong>불편한 편의점</strong><br>김호연</p>
+                                        <p class="price">14000원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="book_info/flamingo.html">
+                                        <img src="images/bestSeller/novel/홍학의_자리.jpg" alt="홍학의 자리">
+                                        <p class="title"><strong>홍학의 자리</strong><br>정해연</p>
+                                        <p class="price">14000원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="book_info/far_alone.html">
+                                        <img src="images/bestSeller/novel/저만치혼자서.jpg" alt="저만치혼자서">
+                                        <p class="title"><strong>저만치 혼자서</strong><br>김훈</p>
+                                        <p class="price">15000원</p>
+                                    </a>
+                                </li>
+                            </ol>
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>더보기</a>
+                        </div>
+                    </div>
+                    <div class="bestMenu" id="essay">
+                        <h4>에세이/시</h4>
+                        <div class="bestBook">
+                            <ol>
+                                <li>
+                                    <a href="book_info/hMart.html">
+                                        <img src="images/bestSeller/essay/H마트에서_울다.jpg" alt="H마트에서 울다">
+                                        <p class="title"><strong>H마트에서 울다</strong><br>미셸 자우너</p>
+                                        <p class="price">16000원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="book_info/startBasics.html">
+                                        <img src="images/bestSeller/essay/모든_것은_기본에서_시작한다.jpg" alt="모든 것은 기본에서 시작한다">
+                                        <p class="title"><strong>모든 것은 기본에서 시작한다</strong><br>손웅정</p>
+                                        <p class="price">16000원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="book_info/accomplish.html">
+                                        <img src="images/bestSeller/essay/당신은_결국_무엇이든_해내는_사람.jpg" alt="당신은 결국 무엇이든 해내는 사람">
+                                        <p class="title"><strong>당신은 결국 무엇이든 해내는 사람</strong><br>김상현</p>
+                                        <p class="price">15000원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="book_info/myFood.html">
+                                        <img src="images/bestSeller/essay/나의_먹이.jpg" alt="나의 먹이">
+                                        <p class="title"><strong>나의 먹이</strong><br>들개이빨</p>
+                                        <p class="price">13000원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="book_info/contents.html">
+                                        <img src="images/bestSeller/essay/콘텐츠_만드는_마음.jpg" alt="콘텐츠 만드는 마음">
+                                        <p class="title"><strong>콘텐츠 만드는 마음</strong><br>서해인</p>
+                                        <p class="price">13500원</p>
+                                    </a>
+                                </li>
+                            </ol>
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>더보기</a>
+                        </div>
+                    </div>
+                    <div class="bestMenu" id="comic">
+                        <h4>만화</h4>
+                        <div class="bestBook">
+                            <ol>
+                                <li>
+                                    <a href="book_info/spyfamily.html">
+                                        <img src="images/bestSeller/comic/스파이패밀리.jpg" alt="스파이패밀리">
+                                        <p class="title"><strong>스파이패밀리</strong><br>엔도 타츠야</p>
+                                        <p class="price">6000원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/bestSeller/comic/도쿄리벤저스.jpg" alt="도쿄리벤저스">
+                                        <p class="title"><strong>도쿄리벤저스</strong><br>와쿠이 켄</p>
+                                        <p class="price">6000원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/bestSeller/comic/헌터x헌터_신장판.jpg" alt="헌터x헌터 신장판">
+                                        <p class="title"><strong>헌터X헌터 신장판</strong><br>토가시 요시히로</p>
+                                        <p class="price">5500원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/bestSeller/comic/주술회전.jpg" alt="주술회전">
+                                        <p class="title"><strong>주술회전</strong><br>아쿠타미 게게</p>
+                                        <p class="price">6000원</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/bestSeller/comic/지박소년하나코군.jpg" alt="지박소년하나코군">
+                                        <p class="title"><strong>지박소년 하나코 군</strong><br>아이다 이로</p>
+                                        <p class="price">6000원</p>
+                                    </a>
+                                </li>
+                            </ol>
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 베스트 셀러 영역 종료 -->
+            <!-- ////////////////////////////////////-->
+            <!-- 공지사항 영역 시작 -->
+            <section id="notice">
+                <h3>공지사항</h3>
+                <ul>
+                    <li><a href="#">구글 인앱 결제 의무 적용 관련 안내</a></li>
+                    <li><a href="#">Paypal 시스템 점검 안내</a></li>
+                </ul>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> 더보기</a>
+            </section>
+            <!-- 공지사항 영역 종료 -->
+
+        </div>
+        <!-- 메인 영역 종료 -->
+
+        <!--------------------------------------------------------------->
+
+        <!-- footer 영역 시작 -->
+        <footer>
+            <div id="footerInner">
+                <!-- 상단 리스트 시작 -->
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">제휴·제안</a></li>
+                    <li><a href="#">광고센터</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">서비스 전체보기</a></li>
+                </ul>
+                <!-- 상단 리스트 종료 -->
+                <!--////////////////////////////////////-->
+                <!-- 주소 영역 시작 -->
+                <address>
+                    <span>서울시 종로구 123-12 한주빌딩 5층</span>
+                    <span> · 대표전화: 02-123-4567 (발신자 부담전화)</span>
+                    <span> · 서울특별시 통신판매업신고번호 : 제 123호 ▶<a href="#">사업자 정보확인</a></span>
+                </address>
+                <!--저작권 정보-->
+                <p class="copyright">copyright since &copy; 2022 <br>by PacaBooks CORPORATION ALL RIGHTS RESERVED</p>
+                <!-- 주소 영역 종료 -->
+            </div>
+        </footer>
+        <!-- footer 영역 시작 -->
+    </div>
+    <!-- wrapper 종료-->
+</body>
+</html>

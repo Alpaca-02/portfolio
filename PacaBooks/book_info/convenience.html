@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacaBooks | 불편한 편의점</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/bookinfo.css">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../images/paca_icon.ico">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bookinfo.js"></script>
+    <script src="../js/common.js"></script>
+
+
+        <!--웹폰트 링크 연결-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <!-- 건너뛰기 링크 (Tab키로 영역링크 / 웹 접근성) -->
+    <!-- 내부점프 a태그 -->
+    <div id="skipNav">
+        <a class="skipBookInfo" href="#bookInfo">책정보</a>
+        <a class="skipBookAnno" href="#bookAnno">책소개</a>
+        <a class="skipItem" href="#bookItem">품목정보</a>
+    </div>
+    <!-- 건너뛰기 링크 종료 -->
+    <div id="wrapper">
+        <!-- 헤더 영역 -->
+        <header>
+            <!--로고, 검색, 아이콘 영역 시작 -->
+            <div id="titleOut">
+                <div id="title">
+                    <!-- 로고 영역 시작-->
+                    <h1><a href="../index.html"><img src="../images/title/PacaBooks-hor.png" alt="logo"></a></h1>
+                    <!-- 로고 영역 종료 -->
+                    <!-- /////////////////////////////////////-->
+                    <!-- 검색 영역 시작 -->
+                    <div id="search">
+                        <h2 class="hidden">책 검색</h2>
+                        <form action="search.jsp" method="get" id="searchForm">
+                            <fieldset>
+                                <legend>검색창</legend>
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i><span class="hidden">검색</span></button>
+                                <input type="search" id="keyword" name="keyword" required>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <!-- 검색 영역 종료 -->
+                    <!--/////////////////////////////////////-->
+                    <!-- 아이콘 영역 시작 -->
+                    <div id="mainIcon">
+                        <h2 class="hidden">메인 아이콘</h2>
+                        <ul>
+                            <li class="notice"><i class="fa fa-bell" aria-hidden="true"></i><span class="hidden">알림</span></li>
+                            <div class="myNotice">
+                                <ul>
+                                    <li>알림이 없습니다.</li>
+                                </ul>
+                            </div>
+                            <li class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="hidden">카트</span></li>
+                            <div class="myCart">
+                                <ul>
+                                    <li>카트가 비어있습니다.</li>
+                                </ul>
+                            </div>
+                            <li><a href="../login.html"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden">마이페이지</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- 아이콘 영역 종료 -->
+                </div>
+            </div>
+            <!--로고, 검색, 아이콘 영역 종료 -->
+            <!--//////////////////////////////////////////////////-->
+            <!-- 메뉴바 영역 시작 -->
+            <nav id="menuBar">
+                <div class="dropDown">
+                    <h2><i class="fa fa-bars" aria-hidden="true"></i><span class="hidden">메뉴바</span></h2>
+                    <div class="menuBar_drop">
+                        <a href="#">소설</a>
+                        <a href="#">에세이/시</a>
+                        <a href="#">인문/사회/역사</a>
+                        <a href="#">만화</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- 메뉴바 영역 종료 -->
+
+        </header>
+        <!-- 헤더 영역 종료 -->
+        
+        
+        <!------------------------------------------------------------->
+
+        <!-- 책 내용 영역 시작 -->
+            <!-- 책정보 영역 시작 -->
+        <section id="bookInfo">
+            <h2 class="hidden">책 정보</h2>
+            <div class="bookCover">
+                <div class="bookImg">
+                    <img src="../images/dayBest/불편한_편의점.jpg" alt="불편한 편의점">
+                    <div class="prevCover"><span><i class="fa fa-book" aria-hidden="true"></i> 미리보기</div></span>
+                    <!--<div class="prvBtn"><i class="fa fa-book" aria-hidden="true"></i> 미리보기</div>-->
+                </div>
+            </div>
+            <div class="bookExp">
+                <h3 class="title">불편한 편의점</h3>
+                <p class="category">소설 <strong>&gt;</strong> 한국소설 <strong>&gt;</strong> 한국 장편소설</p>
+                <p class="writer">김호연 저</p>
+                <p class="publisher">나무옆의자</p>
+
+                <div class="event">
+                    <h3>결제 혜택</h3><span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/hyundailogo.png" alt="">
+                                <p><strong>현대카드 5% 즉시할인</strong><br>1만원 이상 결제시</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/kakaopay.png" alt="">
+                                <p><strong>카카오페이 5천원 할인</strong><br>5만원 이상 결제시, 1회</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/bclogo.png" alt="">
+                                <p><strong>BC카드 6% 즉시할인</strong><br>BC모바일 결제시</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form>
+                    <label>수량</label></span><input type="number" name="bookCount" id="bookCount" value="1" min="1" max="10">
+                </form>
+
+                <table id="priceTable">
+                    <tr><th rowspan="2">구매가</th><td>정가</td><td class="oriPrice">14000원</td></tr>
+                    <tr><td>할인가</td><td class="disPrice">12600원</td></tr>
+                </table>
+
+            </div>
+
+        </section>
+            <!-- 책정보 영역 종료 -->
+
+            <!-- 상단바 구매버튼 영역 시작 -->
+        <section id="upperBar">
+            <h2 class="hidden">상단 구매버튼 바</h2>
+            <div class="barArea">
+                <h3>불편한 편의점</h3>
+                <p class="category">소설 <strong>&gt;</strong> 한국소설 <strong>&gt;</strong> 한국 장편소설</p>
+                <div class="btnArea">
+                    <button>구매하기</button>
+                    <button>장바구니</button>
+                </div>
+            </div>
+        </section>
+            <!-- 상단바 구매버튼 영역 종료 -->
+
+
+            <!-- 책 설명 영역 시작 -->
+        <section id="bookAnno">
+            <h2>책 소개</h2>
+            
+            <p><strong>불편한데 자꾸 가고 싶은 편의점이 있다!<br>힘들게 살아낸 오늘을 위로하는 편의점의 밤<br>정체불명의 알바로부터 시작된 웃음과 감동의 나비효과<br>『망원동 브라더스』 김호연의 ‘동네 이야기’ 시즌 2</strong><br></p>
+            <p>2013년 세계문학상 우수상 수상작 『망원동 브라더스』로 데뷔한 후 일상적 현실을 위트 있게 그린 경쾌한 작품과 인간의 내밀한 욕망을 기발한 상상력으로 풀어낸 스릴러 장르를 오가며 독자적인 작품 세계를 쌓아올린 작가 김호연. 그의 다섯 번째 장편소설 『불편한 편의점』이 출간되었다. 『불편한 편의점』은 청파동 골목 모퉁이에 자리 잡은 작은 편의점을 무대로 힘겨운 시대를 살아가는 우리 이웃들의 삶의 속내와 희로애락을 따뜻하고 유머러스하게 담아낸 작품이다. 『망원동 브라더스』에서 망원동이라는 공간의 체험적 지리지를 잘 활용해 유쾌한 재미와 공감을 이끌어냈듯 이번에는 서울의 오래된 동네 청파동에 대한 공감각을 생생하게 포착해 또 하나의 흥미진진한 ‘동네 이야기’를 탄생시켰다.<br><br><br>
+                서울역에서 노숙인 생활을 하던 독고라는 남자가 어느 날 70대 여성의 지갑을 주워준 인연으로 그녀가 운영하는 편의점에서 야간 알바를 하면서 이야기가 시작된다. 덩치가 곰 같은 이 사내는 알코올성 치매로 과거를 기억하지 못하는 데다 말도 어눌하고 행동도 굼떠 과연 손님을 제대로 상대할 수 있을까 의구심을 갖게 하는데 웬걸, 의외로 그는 일을 꽤 잘해낼 뿐 아니라 주변 사람들을 묘하게 사로잡으면서 편의점의 밤을 지키는 든든한 일꾼이 되어간다.<br><br><br>
+                현실감 넘치는 캐릭터와 그들 간의 상호작용을 점입가경으로 형상화하는 데 일가견이 있는 작가의 작품답게 이 소설에서도 독특한 개성과 사연을 지닌 인물들이 차례로 등장해 서로 티격태격하며 별난 관계를 형성해간다. 고등학교에서 역사를 가르치다 정년퇴임하여 매사에 교사 본능이 발동하는 편의점 사장 염 여사를 필두로 20대 취준생 알바 시현, 50대 생계형 알바 오 여사, 매일 밤 야외 테이블에서 참참참(참깨라면, 참치김밥, 참이슬) 세트로 혼술을 하며 하루의 스트레스를 푸는 회사원 경만, 마지막이라는 각오로 청파동에 글을 쓰러 들어온 30대 희곡작가 인경, 호시탐탐 편의점을 팔아치울 기회를 엿보는 염 여사의 아들 민식, 민식의 의뢰를 받아 독고의 뒤를 캐는 사설탐정 곽이 그들이다. 제각기 녹록지 않은 인생의 무게와 현실적 문제를 안고 있는 이들은 각자의 시선으로 독고를 관찰하는데, 그 과정에서 발생하는 오해와 대립, 충돌과 반전, 이해와 공감은 자주 폭소를 자아내고 어느 순간 울컥 눈시울이 붉어지게 한다. 그렇게 골목길의 작은 편의점은 불편하기 짝이 없는 곳이었다가 고단한 삶을 위로하고 웃음을 나누는 특별한 공간이 된다.</p>
+            <img src="../images/bookInfo/불편한 편의점info.jpg" alt="불편한 편의점 책 이미지">
+        </section>
+            <!-- 책 설명 영역 종료 -->
+
+            <!-- 책 품목정보 영역 시작 -->
+        <section id="bookItem">
+            <h2>품목정보</h2>
+            <table>
+                <tr><th>출간일</th><td>2021년 04월 20일</td></tr>
+                <tr><th>쪽수, 무게, 크기</th><td>268쪽 | 332g | 135*200*20mm</td></tr>
+                <tr><th>ISBN13</th><td>9791161571188</td></tr>
+                <tr><th>ISBN10</th><td>1161571183</td></tr>
+
+            </table>
+        </section>
+
+            <!-- 책 품목정보 영역 종료 -->
+
+        <!-- 책 내용 영역 종료  -->
+
+
+
+
+
+
+
+
+
+        <!--------------------------------------------------------------->
+
+        <!-- footer 영역 시작 -->
+        <footer>
+            <div id="footerInner">
+                <!-- 상단 리스트 시작 -->
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">제휴·제안</a></li>
+                    <li><a href="#">광고센터</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">서비스 전체보기</a></li>
+                </ul>
+                <!-- 상단 리스트 종료 -->
+                <!--////////////////////////////////////-->
+                <!-- 주소 영역 시작 -->
+                <address>
+                    <span>서울시 종로구 123-12 한주빌딩 5층</span>
+                    <span> · 대표전화: 02-123-4567 (발신자 부담전화)</span>
+                    <span> · 서울특별시 통신판매업신고번호 : 제 123호 ▶<a href="#">사업자 정보확인</a></span>
+                </address>
+                <!--저작권 정보-->
+                <p class="copyright">copyright since &copy; 2022 <br>by PacaBooks CORPORATION ALL RIGHTS RESERVED</p>
+                <!-- 주소 영역 종료 -->
+            </div>
+        </footer>
+        <!-- footer 영역 시작 -->
+    </div>
+    <!-- wrapper 종료-->
+</body>
+
+<script>
+    $('#bookInfo .bookImg').click(function(){
+        window.open('../book_prev/convenience_prev.html','미리보기','width=1180,height=750');
+    });
+</script>
+</html>

@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+/* 초기화 영역 */
+html, body, div, header, nav, section, article, aside, footer, figure, figcaption,
+legend, ul,ol,li,dl,dt,dd,h1,h2,h3,h4,p{
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style: none;
+}
+fieldset {
+    border: 0;
+}
+.hidden, legend {
+    display: none;
+}
+body{
+    background-color: #fefbf3;
+}
+html, body{
+    height: 100%;
+}
+
+/* 전체 레이아웃 */
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #fefbf3;
+}
+
+/* 상단 로고부분 시작 */
+#logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+#logo img {
+    width: 300px;
+}
+/* 상단 로고부분 종료 */
+/*/////////////////////////////////////////*/
+/* 계정만들기 아이콘 시작 */
+
+#createAccount {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+
+    background-color: #79b4b7;
+    padding: 5px 20px;
+
+    font-size: 17px;
+
+    box-shadow: 1px 1px 5px #ccc;
+    color: #fefbf3;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #9d9d9d;
+}
+#createAccount:hover {
+    box-shadow: none;
+}
+/* 계정만들기 아이콘 종료 */
+
+
+/* 중앙 로그인 창 시작*/
+#login {
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: rgba(121,180,183,0.2);
+
+    position: relative;
+    top: 25%;
+
+    box-shadow: 1px 1px 3px #ccc;
+
+    z-index: 20;
+
+    text-align: center;
+}
+#login > a > img{
+    width: 200px;
+    padding: 35px 50px 20px 50px;
+}
+#loginForm::before{
+    content: "";
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    background-color: #ccc;
+}
+
+#loginForm{
+    width: 100%;
+    position: relative;
+}
+#loginForm fieldset >p {
+    margin-bottom: 10px;
+}
+
+#loginForm input {
+    width: 200px;
+    height: 30px;
+
+    padding: 4px 10px;
+    border: none;
+    border-radius: 10px;
+}
+#loginForm button {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 5px 80px;
+    background-color: #79b4b7;
+
+    font-weight: bold;
+    color: #fefbf3;
+}
+#findPassword::before{
+    content: "";
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    left: 25px;
+    top: 320px;
+    background-color: #ccc;
+}
+#findPassword {
+    margin-top: 15px;
+}
+#findPassword a {
+    color: #696969;
+    text-decoration: none;
+}
+
+
+/* 중앙 로그인 창 종료 */
+
+/* 백그라운드 이미지 시작 */
+#backPaca {
+    position: absolute;
+    right: 15%;
+    bottom: 50px;
+
+    height: 250px;
+
+}
+/* 백그라운드 이미지 종료 */
+
+
+/* 푸터영역 시작 */
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+
+    border-top: 1px solid #ccc;
+
+    background-color: #9d9d9d;
+    display: block;
+
+}
+
+#copyright {
+    float: left;
+    margin: 10px 0px 0px 25px;
+    font-size: 18px;
+}
+#copyright a{
+    text-decoration: none;
+    color: #222;
+}
+#support {
+    float: right;
+    margin: 10px 25px 0px 0px;
+}
+#support a {
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #222;
+}
+/* 푸터영역 종료 */
+
+

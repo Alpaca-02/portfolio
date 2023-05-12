@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/* 회원가입 페이지 css */
+
+/* 초기화 영역 */
+html, body, div, header, nav, section, article, aside, footer, figure, figcaption,
+legend, ul,ol,li,dl,dt,dd,h1,h2,h3,h4,p{
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style: none;
+}
+fieldset {
+    border: 0;
+}
+.hidden, legend {
+    display: none;
+}
+body{
+    background-color: #fefbf3;
+}
+html, body{
+    height: 100%;
+}
+
+/* 전체 레이아웃 */
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #fefbf3;
+}
+
+/* 상단 로고부분 시작 */
+#logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+#logo img {
+    width: 300px;
+}
+/* 상단 로고부분 종료 */
+/*/////////////////////////////////////////*/
+/* 로그인 아이콘 시작 */
+
+#login {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+
+    background-color: #79b4b7;
+    padding: 5px 20px;
+
+    font-size: 17px;
+
+    box-shadow: 1px 1px 5px #ccc;
+    color: #fefbf3;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #9d9d9d;
+    transition: all 0.2s;
+}
+#login:hover {
+    box-shadow: none;
+    transition: all 0.2s;
+}
+/* 로그인 아이콘 종료 */
+
+
+/* 중앙 계정생성 창 시작*/
+#create {
+    width: 300px;
+    height: 550px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: rgba(121,180,183,0.2);
+
+    position: relative;
+    top: 15%;
+
+    box-shadow: 1px 1px 3px #ccc;
+
+    z-index: 20;
+
+    text-align: center;
+}
+#create > h2 {
+    padding: 15px 0 20px 0;
+}
+
+#create > a > img{
+    width: 200px;
+    padding: 35px 50px 20px 50px;
+}
+#joinForm::before{
+    content: "";
+    height: 2px;
+    width: 250px;
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    background-color: #ccc;
+}
+
+#joinForm{
+    width: 100%;
+    position: relative;
+}
+#joinForm fieldset >p {
+    margin-bottom: 10px;
+}
+
+#joinForm >fieldset>p>input {
+    width: 200px;
+    height: 30px;
+
+    padding: 4px 10px;
+    border: none;
+    border-radius: 10px;
+}
+#joinForm .find {
+    width: 220px;
+    height: 30px;
+
+    background-color: #79b4b7;
+
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    display: inline-block;
+
+    box-shadow: 1px 1px 5px #666;
+
+    color: #fefbf3;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #333;
+    line-height: 30px;
+
+    width: 220px;
+    height: 100%;
+
+    margin-top: 10px;
+    transition: all 0.2s;
+
+    cursor: pointer;
+}
+#joinForm .find:hover{
+    background-color: #9d9d9d;
+    box-shadow: none;
+    transition: all 0.2s;
+}
+
+#joinForm button {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 5px 20px;
+    background-color: #79b4b7;
+    
+    box-shadow: 1px 1px 5px #666;
+
+    font-weight: bold;
+    color: #fefbf3;
+    transition: all 0.2s;
+}
+#joinForm button:hover{
+    background-color: #9d9d9d;
+    box-shadow: none;
+    transition: all 0.2s;
+}
+
+.adv{
+    background-color: rgba(204, 204, 204, 0.8);
+    width: 200px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.adv > .title {
+    font-weight: bolder;
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+.adv > .radio{
+    text-align: right;
+    color: #777;
+    font-weight: bold;
+    position: relative;
+    right: 10px;
+}
+.adv > .radio:first-child {
+    margin-bottom: 5px;
+}
+.adv > .radio >span {
+    text-align: left;
+}
+.adv>.radio> input {
+    width: 30px;
+}
+
+
+/* 중앙 계정생성 창 종료 */
+
+/* 백그라운드 이미지 시작 */
+#backPaca {
+    position: absolute;
+    right: 15%;
+    bottom: 50px;
+
+    height: 250px;
+
+}
+/* 백그라운드 이미지 종료 */
+
+
+/* 푸터영역 시작 */
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+
+    border-top: 1px solid #ccc;
+
+    background-color: #9d9d9d;
+    display: block;
+
+}
+
+#copyright {
+    float: left;
+    margin: 10px 0px 0px 25px;
+    font-size: 18px;
+}
+#copyright a{
+    text-decoration: none;
+    color: #222;
+}
+#support {
+    float: right;
+    margin: 10px 25px 0px 0px;
+}
+#support a {
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #222;
+}
+/* 푸터영역 종료 */
+
+

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacaBooks | 콘텐츠 만드는 마음</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/bookinfo.css">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../images/paca_icon.ico">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bookinfo.js"></script>
+    <script src="../js/common.js"></script>
+
+
+        <!--웹폰트 링크 연결-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <!-- 건너뛰기 링크 (Tab키로 영역링크 / 웹 접근성) -->
+    <!-- 건너뛰기 링크 (Tab키로 영역링크 / 웹 접근성) -->
+    <!-- 내부점프 a태그 -->
+    <div id="skipNav">
+        <a class="skipBookInfo" href="#bookInfo">책정보</a>
+        <a class="skipBookAnno" href="#bookAnno">책소개</a>
+        <a class="skipItem" href="#bookItem">품목정보</a>
+    </div>
+    <!-- 건너뛰기 링크 종료 -->
+    <div id="wrapper">
+        <!-- 헤더 영역 -->
+        <header>
+            <!--로고, 검색, 아이콘 영역 시작 -->
+            <div id="titleOut">
+                <div id="title">
+                    <!-- 로고 영역 시작-->
+                    <h1><a href="../index.html"><img src="../images/title/PacaBooks-hor.png" alt="logo"></a></h1>
+                    <!-- 로고 영역 종료 -->
+                    <!-- /////////////////////////////////////-->
+                    <!-- 검색 영역 시작 -->
+                    <div id="search">
+                        <h2 class="hidden">책 검색</h2>
+                        <form action="search.jsp" method="get" id="searchForm">
+                            <fieldset>
+                                <legend>검색창</legend>
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i><span class="hidden">검색</span></button>
+                                <input type="search" id="keyword" name="keyword" required>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <!-- 검색 영역 종료 -->
+                    <!--/////////////////////////////////////-->
+                    <!-- 아이콘 영역 시작 -->
+                    <div id="mainIcon">
+                        <h2 class="hidden">메인 아이콘</h2>
+                        <ul>
+                            <li class="notice"><i class="fa fa-bell" aria-hidden="true"></i><span class="hidden">알림</span></li>
+                            <div class="myNotice">
+                                <ul>
+                                    <li>알림이 없습니다.</li>
+                                </ul>
+                            </div>
+                            <li class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="hidden">카트</span></li>
+                            <div class="myCart">
+                                <ul>
+                                    <li>카트가 비어있습니다.</li>
+                                </ul>
+                            </div>
+                            <li><a href="../login.html"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden">마이페이지</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- 아이콘 영역 종료 -->
+                </div>
+            </div>
+            <!--로고, 검색, 아이콘 영역 종료 -->
+            <!--//////////////////////////////////////////////////-->
+            <!-- 메뉴바 영역 시작 -->
+            <nav id="menuBar">
+                <div class="dropDown">
+                    <h2><i class="fa fa-bars" aria-hidden="true"></i><span class="hidden">메뉴바</span></h2>
+                    <div class="menuBar_drop">
+                        <a href="#">소설</a>
+                        <a href="#">인문교양/시</a>
+                        <a href="#">인문/사회/역사</a>
+                        <a href="#">만화</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- 메뉴바 영역 종료 -->
+
+        </header>
+        <!-- 헤더 영역 종료 -->
+        
+        
+        <!------------------------------------------------------------->
+
+        <!-- 책 내용 영역 시작 -->
+            <!-- 책정보 영역 시작 -->
+        <section id="bookInfo">
+            <h2 class="hidden">책 정보</h2>
+            <div class="bookCover">
+                <div class="bookImg">
+                    <img src="../images/bestSeller/essay/콘텐츠_만드는_마음.jpg" alt="콘텐츠 만드는 마음">
+                    <div class="prevCover"><span><i class="fa fa-book" aria-hidden="true"></i> 미리보기</div></span>
+                    <!--<div class="prvBtn"><i class="fa fa-book" aria-hidden="true"></i> 미리보기</div>-->
+                </div>
+            </div>
+            <div class="bookExp">
+                <h3 class="title">콘텐츠 만드는 마음</h3>
+                <p class="category">인문 <strong>&gt;</strong> 인문교양 <strong>&gt;</strong> 인문 에세이</p>
+                <p class="writer">서해인 저</p>
+                <p class="publisher">문예출판사</p>
+
+                <div class="event">
+                    <h3>결제 혜택</h3><span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/hyundailogo.png" alt="">
+                                <p><strong>현대카드 5% 즉시할인</strong><br>1만원 이상 결제시</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/kakaopay.png" alt="">
+                                <p><strong>카카오페이 5천원 할인</strong><br>5만원 이상 결제시, 1회</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/bclogo.png" alt="">
+                                <p><strong>BC카드 6% 즉시할인</strong><br>BC모바일 결제시</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form>
+                    <label>수량</label></span><input type="number" name="bookCount" id="bookCount" value="1" min="1" max="10">
+                </form>
+
+                <table id="priceTable">
+                    <tr><th rowspan="2">구매가</th><td>정가</td><td class="oriPrice">13500원</td></tr>
+                    <tr><td>할인가</td><td class="disPrice">12150원</td></tr>
+                </table>
+
+            </div>
+
+        </section>
+            <!-- 책정보 영역 종료 -->
+
+            <!-- 상단바 구매버튼 영역 시작 -->
+        <section id="upperBar">
+            <h2 class="hidden">상단 구매버튼 바</h2>
+            <div class="barArea">
+                <h3>콘텐츠 만드는 마음</h3>
+                <p class="category">인문 <strong>&gt;</strong> 인문교양 <strong>&gt;</strong> 인문 에세이</p>
+                <div class="btnArea">
+                    <button>구매하기</button>
+                    <button>장바구니</button>
+                </div>
+            </div>
+        </section>
+            <!-- 상단바 구매버튼 영역 종료 -->
+
+
+            <!-- 책 설명 영역 시작 -->
+        <section id="bookAnno">
+            <h2>책 소개</h2>
+            
+            <p><strong>콘텐츠를 보고, 듣고, 만드는 마음에 관하여<br>뉴스레터 〈콘텐츠 로그〉 서해인 발행인의 첫 에세이!</strong><br></p>
+            <p>수많은 사람이 블로그, 브런치, 유튜브, 뉴스레터 등의 플랫폼에 자신만의 콘텐츠를 업로드한다. 콘텐츠를 향한 이들의 마음은 ‘진심’이다. 구독자가 조금만 늘어도 뛸 듯이 기뻐하고, 호평 일색인 댓글에 단 하나의 비판만 있어도 가슴 아파한다. 대다수의 콘텐츠 생산자들이 아무런 경제적 보상을 받지 못하는데도 그렇다. 투자 대비 효용만을 고려했을 때 이들의 열정은 터무니없어 보인다. 우리에게 다른 설명이 필요한 이유다.<br><br><br>
+                2019년부터 대중문화 전반을 다루는 뉴스레터 〈콘텐츠 로그〉를 발행해온 서해인 작가는 자신의 첫 책 『콘텐츠 만드는 마음』에서 ‘마음’에 주목하자고 제안한다. 그저 콘텐츠 만드는 일을 계속하고 싶은 마음, 효용이나 안정성보다 더 중요한 가치가 있다는 믿음이 깃든 마음, 그리고 무엇보다 콘텐츠를 애호하는 마음 말이다. 매일 수많은 콘텐츠가 쏟아지는 동시에 그만큼 많은 콘텐츠가 빠르게 잊히는 세상에서, 좋은 콘텐츠가 더 많은 사람에게 흘러갈 수 있다면 그것만으로 족하다는 서해인 작가의 마음이 귀하다.<br><br><br>
+                서해인 작가가 오랜 시간 콘텐츠를 보고, 듣고, 만들어온 ‘마음들’을 갈무리한 『콘텐츠 만드는 마음』은 콘텐츠를 아끼고 창작하는 모두가 함께 울고 웃으며 서로를 다독이는 소중한 연대의 계기가 되어줄 것이다. 서해인 작가의 이야기가 콘텐츠를 아끼고 사랑하는 당신의 마음과 공명하길 바란다.</p>
+            <img src="../images/bookInfo/콘텐츠 만드는 마음 info.jpg" alt="콘텐츠 만드는 마음 책 이미지">
+        </section>
+            <!-- 책 설명 영역 종료 -->
+
+            <!-- 책 품목정보 영역 시작 -->
+        <section id="bookItem">
+            <h2>품목정보</h2>
+            <table>
+                <tr><th>출간일</th><td>2022년 07월 01일</td></tr>
+                <tr><th>쪽수, 무게, 크기</th><td>224쪽 | 298g | 130*188*20mm</td></tr>
+                <tr><th>ISBN13</th><td>9788931022803</td></tr>
+                <tr><th>ISBN10</th><td>8931022808</td></tr>
+
+            </table>
+        </section>
+
+            <!-- 책 품목정보 영역 종료 -->
+
+        <!-- 책 내용 영역 종료  -->
+
+
+
+
+
+
+
+
+
+        <!--------------------------------------------------------------->
+
+        <!-- footer 영역 시작 -->
+        <footer>
+            <div id="footerInner">
+                <!-- 상단 리스트 시작 -->
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">제휴·제안</a></li>
+                    <li><a href="#">광고센터</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">서비스 전체보기</a></li>
+                </ul>
+                <!-- 상단 리스트 종료 -->
+                <!--////////////////////////////////////-->
+                <!-- 주소 영역 시작 -->
+                <address>
+                    <span>서울시 종로구 123-12 한주빌딩 5층</span>
+                    <span> · 대표전화: 02-123-4567 (발신자 부담전화)</span>
+                    <span> · 서울특별시 통신판매업신고번호 : 제 123호 ▶<a href="#">사업자 정보확인</a></span>
+                </address>
+                <!--저작권 정보-->
+                <p class="copyright">copyright since &copy; 2022 <br>by PacaBooks CORPORATION ALL RIGHTS RESERVED</p>
+                <!-- 주소 영역 종료 -->
+            </div>
+        </footer>
+        <!-- footer 영역 시작 -->
+    </div>
+    <!-- wrapper 종료-->
+</body>
+
+<script>
+    $('#bookInfo .bookImg').click(function(){
+        window.open('../book_prev/contents_prev.html','미리보기','width=1180,height=750');
+    });
+</script>
+</html>

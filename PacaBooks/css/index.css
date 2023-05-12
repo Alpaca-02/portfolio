@@ -1,0 +1,602 @@
+@charset "utf-8";
+/* 배너영역 시작 */
+#banner {
+    position: relative;
+    display: flex;
+    width: 930px;
+    height: 400px;
+    margin-top: 10px;
+}
+.banner {
+    height: 390px;
+    margin: 5px 3px;
+    flex: 1 1 0;
+    border-radius: 10px;
+    background-position: center;
+    transition: all 0.5s;
+
+    position: relative;
+    cursor: pointer;
+}
+.banner1{
+    background-image: url(../images/banner/친밀한-이방인-배너.png);
+}
+.banner2 {
+    background-image: url(../images/banner/역행자-배너.png);
+}
+.banner3 {
+    background-image: url(../images/banner/모든것은-기본에서-시작한다-배너.png);
+}
+.banner4 {
+    background-image: url(../images/banner/인플레이션-배너.png);
+}
+.banner5 {
+    background-image: url(../images/banner/홍학의-자리-배너.png);
+}
+.active{
+    flex: 2 2 0;
+}
+/* /* .banner1 > div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 0.5s;
+    white-space: nowrap;
+    overflow: hidden;
+
+    color: #fff;
+} */
+
+.banner >div {
+    position: absolute;
+    top: 310px;
+    color: #fff;
+    opacity: 0;
+
+    transition: opacity 0.5s;
+}
+.banner > div> h3{
+    font-size: 1.5em;
+    position: relative;
+    bottom: 20px;
+    left: 30px;
+    text-shadow: 2px 2px 5px #666,-1px 0 #444, 0 1px #444, 1px 0 #444, 0 -1px #444;
+}
+.banner > div > p {
+    font-weight: bold;
+    position: relative;
+    bottom: 7px;
+    left: 30px;
+    text-shadow: 2px 2px 5px #666,-1px 0 #444, 0 1px #444, 1px 0 #444, 0 -1px #444;
+} 
+.bannerTitleMain{
+    opacity: 0;
+}
+
+
+
+
+
+
+/* #banner:hover .banner1{
+    flex: 0 0 0;
+    transition: all 0.5s;
+}
+
+#banner:hover .banner1 >div{
+    opacity: 0;
+    transition: all 0.3s;
+}
+#banner:hover .banner2{
+    flex: 20 20 0;
+    transition: all 0.5s;
+} */
+
+
+#banner .bannerBtn {
+    width: 35px;
+    height: 35px;
+    background-color: #f8f8f8;
+    color: #9d9d9d;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    line-height: 35px;
+    text-align: center;
+
+    box-shadow: 1px 1px 5px #666;
+
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#banner .bannerBtn:hover{
+    box-shadow: none;
+    transition: all 0.2s;
+}
+#banner .leftBtn {
+    left: -10px;
+    top: 180px;
+}
+#banner .rightBtn {
+    right: -10px;
+    top: 180px;
+}
+/* 배너영역 종료 */
+
+/*----------------------------------------------------------*/
+
+/* 메인 영역 시작 */
+#contentArea{
+    margin-top: 10px;
+    width: 930px;
+}
+
+    /* 오늘의 책 영역 시작 */
+#todayBook {
+    height: 400px;
+    position: relative;
+
+    display: flex;
+}
+#todayBook h3 {
+    position: absolute;
+    left: 295px;
+    top: 60px;
+    font-size: 1.5em;
+    font-weight: 900;
+
+    text-shadow: 1px 1px 5px #ccc;
+}
+#downBar {
+    position: absolute;
+    width: 696.5px;
+    height: 100px;
+
+    background-color: #f8f0df;
+
+    bottom: 0px;
+    left: 0.5px;
+
+    border-top: 1px solid #eee;
+}
+#bookImg {
+    flex: 7.5 7.5 0;
+    position: relative;
+}
+#bookImg  img {
+    position: absolute;
+    height: 320px;
+    left: 40px;
+    bottom: 35px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 20px #333;
+    transition: all 0.2s;
+    z-index: 5;
+}
+#bookImg  img:hover, #bookImg  img:focus {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 20px #333;
+    transition: all 0.2s;
+}
+
+#bookImg >div>div {
+    display: inline-block;
+    position: absolute;
+    width: 350px;
+    right: 50px;
+    top: 120px;
+    text-align: justify;
+    color: #666;
+    text-shadow: 2px 2px 5px #ccc;
+}
+
+.innerImg h4{
+    color: #79b4b7;
+}
+.innerImg p {
+    color: #666;
+}
+.innerImg p:hover {
+    text-shadow: none;
+    transition: 0.2s;
+}
+/* 말풍선 삼각형 */
+.innerImg .tri {
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 340px;
+    top: -80px;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid #79b4b7;
+}
+
+.innerTitle {
+    position: relative;
+    top: 40px;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+.innerTitle span{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#bookSide {
+    flex: 2.5 2.5 0;
+    display: flex;
+    flex-direction: column;
+}
+.side{
+    flex: 1 1 0;
+    background-color: #9d9d9d;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+.side img {
+    display: inline-block;
+    width: 70px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 5px #333;
+    cursor: pointer;
+}
+.side h4 {
+    color: #fefbf3;
+}
+.side h4{
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    font-size: 1em;
+    text-align: justify;
+    width: 100px;
+    cursor: pointer;
+}
+.side h4 span{
+    letter-spacing: 1px;
+    color: #f8f6f1;
+    text-shadow: 1px 1px 1px #555;
+}
+.side1 {
+    background-color: #79b4b7;
+}
+
+.side2 {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.side:hover, .side:focus{
+    background-color: #79b4b7;
+    transition: all 0.1s;
+}
+/* hover 위치???????
+.side:hover .innerImg div {
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid #79b4b7;
+}
+*/
+
+
+/* 사이드 메뉴 타겟 */
+
+
+
+    /* 오늘의 책 영역 종료 */
+
+    /*/////////////////////////////////*/
+
+    /* 일반도서 영역 시작 */
+#normalBest {
+    height: 400px;
+    width: 930px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+.normalBest_title {
+    flex: 1 1 0;
+    position: relative;
+
+}
+.normalBest_title h3 {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 5px #ccc;
+}
+.normalBest_title > div{
+    width: 300px;
+    position: absolute;
+    left: 180px;
+    top: 13px;
+}
+.day div {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 7px 15px;
+    background-color: #9d9d9d;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #666;
+
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fefbf3;
+    text-shadow: 1px 1px 5px #666;
+
+    cursor: pointer;
+
+}
+/*버튼부분 스크립트 적용전 임시 눌림*/
+.day div:first-child{
+    background-color: #79b4b7;
+}
+.day div:hover, .day div:focus{
+    box-shadow: none;
+    transition: all 0.3s;
+}
+
+.normalList {
+    flex: 6 6 0;
+    position: relative;
+}
+.normalList ol {
+    display: flex;
+    position: absolute;
+    padding: 0 20px 0 40px;
+    box-sizing: border-box;
+    width: 930px;
+}
+.normalList ol:nth-child(2){
+    left: 930px;
+}
+.normalList ol:nth-child(3){
+    left: 1860px;
+}
+.normalList ol li::before{
+    content: counter(number, decimal);
+    font-weight: bold;
+    color: #fefbf3;
+    text-shadow: 1px 1px 5px #666;
+    padding: 2px 8px ;
+    border-radius: 0 0 10px 0;
+    position: absolute;
+    top: 14px;
+    z-index: 20;
+    background-color: rgba(157, 157, 157, 0.7);
+}
+.normalList ol li:first-child:before{
+    background-color: rgba(121, 180, 183, 0.7);
+}
+.normalList ol li {
+    flex: 1 1 0;
+    display: inline-block;
+    height: 340px;
+    margin-right: 20px;
+    position: relative;
+
+    transition: 0.2s;
+    /* ol 리스트 순번을 가져옴*/
+    counter-increment: number;
+
+}
+.normalList ol li img{
+    width: 100%;
+    height: 230px;
+    position: absolute;
+    top: 15px;
+
+    box-shadow: 1px 1px 5px #555;
+
+}
+
+.normalList ol li:hover, .normalList ol li:focus {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.normalList ol > li > p {
+    position: absolute;
+    bottom: 30px;
+    font-size: 0.75em;
+    line-height: 1.7em;
+
+    text-shadow: 1px 1px 5px #ccc;
+}
+.normalList ol> li > p strong {
+    font-size: 1.1em;
+}
+
+    /* 일반도서 영역 종료 */
+
+    /*//////////////////////////////////////*/
+
+    /* 베스트 셀러 영역 시작 */
+#bestSeller {
+    display: flex;
+    flex-direction: column;
+    width: 930px;
+    height: 850px;
+    margin-bottom: 30px;
+
+}
+#bestSeller > h3 {
+    flex: 1 1 0;
+
+    font-size: 1.6em;
+    text-shadow: 1px 1px 5px #ccc;
+
+    padding-left: 10px;
+    padding-top: 20px;
+}
+#bestSeller > .bestTop {
+    flex: 8 8 0;
+    display: flex;
+
+}
+.bestMenu {
+    flex: 1 1 0;
+    position: relative;
+
+}
+.bestMenu h4{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 5px #ccc;
+}
+.bestBook {
+    width: 250px;
+    height: 700px;
+    background-color: #f8f0df;
+    margin: 35px 27px;
+
+    position: relative;
+    top: 5px;
+
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+.bestBook > ol{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.bestBook >ol>li {
+    flex: 1 1 0;
+    position: relative;
+    counter-increment: bestNum;
+    list-style: none;
+}
+
+.bestBook > ol > li::before {
+    content: counter(bestNum, decimal);
+    font-weight: bold;
+    color: #fefbf3;
+    text-shadow: 1px 1px 5px #ccc;
+
+    position: absolute;
+    top: 3px;
+    left: 5px;
+
+    padding: 1px 6px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 5px #ccc;
+
+    background-color: rgba(157, 157, 157, 0.7);
+
+    z-index: 10;
+}
+.bestBook > ol > li:first-child::before {
+    background-color:  rgba(121, 180, 183, 0.7);
+}
+.bestBook > ol >li img {
+    width: 80px;
+    height: 110px;
+    margin: 13px 0px 0px 18px;
+    box-shadow: 1px 1px 5px #666;
+    border: 1px solid #ccc;
+    transition: transform 0.1s;
+}
+.bestBook >ol >li:hover img,.bestBook >ol >li:focus img{
+    transform: scale(1.1);
+    transition: transform 0.1s;
+}
+
+.bestBook > ol > li strong {
+    line-height: 12px;
+    font-size: 14px;
+    z-index: 0;
+}
+.bestBook > ol > li .title {
+    position: absolute;
+    top: 27px;
+    left: 120px;
+    font-size: 0.7em;
+
+    line-height: 17px;
+    text-shadow: 1px 1px 3px #ccc;
+
+    padding-right: 10px;
+}
+.bestBook > ol > li .price {
+    position: absolute;
+    left: 120px;
+    bottom: 45px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.bestBook > a {
+    position: absolute;
+    top: -25px;
+    right: -5px;
+    font-size: 0.9em;
+    text-shadow: 1px 1px 3px #ccc;
+}
+.bestBook > a > i {
+    color: #79b4b7;
+}
+    /* 베스트 셀러 영역 종료 */
+
+    /* 공지사항 영역 시작 */
+#notice {
+    height: 50px;
+
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    position: relative;
+}
+#notice h3::after{
+    content: " |";
+    position: relative;
+    top: -2px;
+    left: 10px;
+    color: #9d9d9d;
+}
+
+#notice h3, #notice ul li {
+    float: left;
+    margin: 15px 20px 0px 20px;
+
+    text-shadow: 1px 1px 5px #ccc;
+}
+#notice > a {
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 14px;
+
+    text-shadow: 1px 1px 5px #ccc;
+}
+#notice > a>i {
+    color: #79b4b7;
+}
+
+
+    /* 공지사항 영역 종료 */
+/* 메인 영역 종료 */
+
+
+/* 모바일의 경우의 미디어 쿼리*/
+@media screen and (max-width:500px){
+    body, #banner, #contentArea, #normalBest, #bestSeller header footer{
+        width: 100%;
+    }
+
+}

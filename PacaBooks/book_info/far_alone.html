@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacaBooks | 저만치 혼자서</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/bookinfo.css">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../images/paca_icon.ico">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bookinfo.js"></script>
+    <script src="../js/common.js"></script>
+
+
+        <!--웹폰트 링크 연결-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <!-- 건너뛰기 링크 (Tab키로 영역링크 / 웹 접근성) -->
+    <!-- 건너뛰기 링크 (Tab키로 영역링크 / 웹 접근성) -->
+    <!-- 내부점프 a태그 -->
+    <div id="skipNav">
+        <a class="skipBookInfo" href="#bookInfo">책정보</a>
+        <a class="skipBookAnno" href="#bookAnno">책소개</a>
+        <a class="skipItem" href="#bookItem">품목정보</a>
+    </div>
+    <!-- 건너뛰기 링크 종료 -->
+    <div id="wrapper">
+        <!-- 헤더 영역 -->
+        <header>
+            <!--로고, 검색, 아이콘 영역 시작 -->
+            <div id="titleOut">
+                <div id="title">
+                    <!-- 로고 영역 시작-->
+                    <h1><a href="../index.html"><img src="../images/title/PacaBooks-hor.png" alt="logo"></a></h1>
+                    <!-- 로고 영역 종료 -->
+                    <!-- /////////////////////////////////////-->
+                    <!-- 검색 영역 시작 -->
+                    <div id="search">
+                        <h2 class="hidden">책 검색</h2>
+                        <form action="search.jsp" method="get" id="searchForm">
+                            <fieldset>
+                                <legend>검색창</legend>
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i><span class="hidden">검색</span></button>
+                                <input type="search" id="keyword" name="keyword" required>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <!-- 검색 영역 종료 -->
+                    <!--/////////////////////////////////////-->
+                    <!-- 아이콘 영역 시작 -->
+                    <div id="mainIcon">
+                        <h2 class="hidden">메인 아이콘</h2>
+                        <ul>
+                            <li class="notice"><i class="fa fa-bell" aria-hidden="true"></i><span class="hidden">알림</span></li>
+                            <div class="myNotice">
+                                <ul>
+                                    <li>알림이 없습니다.</li>
+                                </ul>
+                            </div>
+                            <li class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="hidden">카트</span></li>
+                            <div class="myCart">
+                                <ul>
+                                    <li>카트가 비어있습니다.</li>
+                                </ul>
+                            </div>
+                            <li><a href="../login.html"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden">마이페이지</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- 아이콘 영역 종료 -->
+                </div>
+            </div>
+            <!--로고, 검색, 아이콘 영역 종료 -->
+            <!--//////////////////////////////////////////////////-->
+            <!-- 메뉴바 영역 시작 -->
+            <nav id="menuBar">
+                <div class="dropDown">
+                    <h2><i class="fa fa-bars" aria-hidden="true"></i><span class="hidden">메뉴바</span></h2>
+                    <div class="menuBar_drop">
+                        <a href="#">소설</a>
+                        <a href="#">에세이/시</a>
+                        <a href="#">인문/사회/역사</a>
+                        <a href="#">만화</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- 메뉴바 영역 종료 -->
+
+        </header>
+        <!-- 헤더 영역 종료 -->
+        
+        
+        <!------------------------------------------------------------->
+
+        <!-- 책 내용 영역 시작 -->
+            <!-- 책정보 영역 시작 -->
+        <section id="bookInfo">
+            <h2 class="hidden">책 정보</h2>
+            <div class="bookCover">
+                <div class="bookImg">
+                    <img src="../images/todayBook/저만치_혼자서.jpg" alt="저만치 혼자서">
+                    <div class="prevCover"><span><i class="fa fa-book" aria-hidden="true"></i> 미리보기</div></span>
+                    <!--<div class="prvBtn"><i class="fa fa-book" aria-hidden="true"></i> 미리보기</div>-->
+                </div>
+            </div>
+            <div class="bookExp">
+                <h3 class="title">저만치 혼자서</h3>
+                <p class="category">소설 <strong>&gt;</strong> 한국소설 <strong>&gt;</strong> 한국 단편소설</p>
+                <p class="writer">김훈 저</p>
+                <p class="publisher">문학동네</p>
+
+                <div class="event">
+                    <h3>결제 혜택</h3><span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/hyundailogo.png" alt="">
+                                <p><strong>현대카드 5% 즉시할인</strong><br>1만원 이상 결제시</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/kakaopay.png" alt="">
+                                <p><strong>카카오페이 5천원 할인</strong><br>5만원 이상 결제시, 1회</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/bclogo.png" alt="">
+                                <p><strong>BC카드 6% 즉시할인</strong><br>BC모바일 결제시</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form>
+                    <label>수량</label></span><input type="number" name="bookCount" id="bookCount" value="1" min="1" max="10">
+                </form>
+
+                <table id="priceTable">
+                    <tr><th rowspan="2">구매가</th><td>정가</td><td class="oriPrice">14000원</td></tr>
+                    <tr><td>할인가</td><td class="disPrice">13600원</td></tr>
+                </table>
+
+            </div>
+
+        </section>
+            <!-- 책정보 영역 종료 -->
+
+            <!-- 상단바 구매버튼 영역 시작 -->
+        <section id="upperBar">
+            <h2 class="hidden">상단 구매버튼 바</h2>
+            <div class="barArea">
+                <h3>저만치 혼자서</h3>
+                <p class="category">소설 <strong>&gt;</strong> 한국소설 <strong>&gt;</strong> 한국 단편소설</p>
+                <div class="btnArea">
+                    <button>구매하기</button>
+                    <button>장바구니</button>
+                </div>
+            </div>
+        </section>
+            <!-- 상단바 구매버튼 영역 종료 -->
+
+
+            <!-- 책 설명 영역 시작 -->
+        <section id="bookAnno">
+            <h2>책 소개</h2>
+            
+            <p><strong>“나는 한 사람의 이웃으로 이 글을 썼다.”<br>삶에 감겨든 글, 글에 감겨든 삶<br>『강산무진』 이후 16년, 김훈 두번째 소설집</strong><br></p>
+            <p>언제나 운명과 대면하는 인간의 자리에서 글을 써온 김훈의 소설집 『저만치 혼자서』가 출간되었다. 2006년 첫 소설집 『강산무진』을 펴낸 후 집필해온 7편의 단편소설을 묶은 두번째 소설집이다. 이처럼 김훈의 단편은 귀하다. 그가 『칼의 노래』 『현의 노래』 『남한산성』 등 한국문학의 대체 불가능한 명작 장편들을 연달아 발표하며 거장의 반열에 오른 이후로 계속해서 성실한 글쓰기와 자기 갱신을 보여왔음에도 그렇다. 그의 단편은 장편에 비해 일상적인 인물과 사건을 주로 다루는바, 그렇다면 김훈은 자신과 가까운 이웃들의 이야기를 소설로 쓸 때 유독 고심한다는 뜻일까. 인간 개개인의 역사에서 일상은 결코 사소한 사건이 아님을 김훈의 단편은 먹먹할 정도로 드러내 보이고 있으므로.<br><br><br>
+                비루한 인간사를 허무하게 바라보던 김훈의 시선은 16년의 세월을 지나며 조금 더 애틋해진 듯하다. 물론 『저만치 혼자서』에서도 인간의 생애는 그들의 고통이나 절망과 관계없이 무심하게 흐르고, 시간은 살아가는 요령을 알려주는 대가로 그들의 신체를 허물어갈 뿐이다. 인간은 나약해서 이 비참한 과정을 지켜볼 수밖에 없다. 하지만 이번 소설집에서 김훈은 그런 나약한 인간이 멈출 수 없는 시간에 초연히 몸을 맡기는 모습까지를 쓴다. 버티다보면 힘겨웠던 지난 일도 견딜 만한 기억으로 남고, 감정을 터놓을 상대가 점차 사라지는 외로운 과정이 곧 인생이며, 인간은 그저 시작에서 끝을 향해 갈 뿐이라는 사실을 받아들이고 다시금 삶에 임하는 김훈의 인물들은 한결 편안한 분위기를 풍긴다.</p>
+            <img src="../images/bookInfo/저만치혼자서info.jpg" alt="저만치혼자서 책 이미지">
+        </section>
+            <!-- 책 설명 영역 종료 -->
+
+            <!-- 책 품목정보 영역 시작 -->
+        <section id="bookItem">
+            <h2>품목정보</h2>
+            <table>
+                <tr><th>출간일</th><td>2022년 06월 20일</td></tr>
+                <tr><th>쪽수, 무게, 크기</th><td>264쪽 | 368g | 128*188*20mm</td></tr>
+                <tr><th>ISBN13</th><td>9788954686921</td></tr>
+                <tr><th>ISBN10</th><td>8954686923</td></tr>
+
+            </table>
+        </section>
+
+            <!-- 책 품목정보 영역 종료 -->
+
+        <!-- 책 내용 영역 종료  -->
+
+
+
+
+
+
+
+
+
+        <!--------------------------------------------------------------->
+
+        <!-- footer 영역 시작 -->
+        <footer>
+            <div id="footerInner">
+                <!-- 상단 리스트 시작 -->
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">제휴·제안</a></li>
+                    <li><a href="#">광고센터</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">서비스 전체보기</a></li>
+                </ul>
+                <!-- 상단 리스트 종료 -->
+                <!--////////////////////////////////////-->
+                <!-- 주소 영역 시작 -->
+                <address>
+                    <span>서울시 종로구 123-12 한주빌딩 5층</span>
+                    <span> · 대표전화: 02-123-4567 (발신자 부담전화)</span>
+                    <span> · 서울특별시 통신판매업신고번호 : 제 123호 ▶<a href="#">사업자 정보확인</a></span>
+                </address>
+                <!--저작권 정보-->
+                <p class="copyright">copyright since &copy; 2022 <br>by PacaBooks CORPORATION ALL RIGHTS RESERVED</p>
+                <!-- 주소 영역 종료 -->
+            </div>
+        </footer>
+        <!-- footer 영역 시작 -->
+    </div>
+    <!-- wrapper 종료-->
+</body>
+
+<script>
+    $('#bookInfo .bookImg').click(function(){
+        window.open('../book_prev/far_alone_prev.html','미리보기','width=1180,height=750');
+    });
+</script>
+</html>

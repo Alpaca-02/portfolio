@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacaBooks | 작별인사</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/bookinfo.css">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../images/paca_icon.ico">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bookinfo.js"></script>
+    <script src="../js/common.js"></script>
+
+
+        <!--웹폰트 링크 연결-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <!-- 건너뛰기 링크 (Tab키로 영역링크 / 웹 접근성) -->
+    <!-- 내부점프 a태그 -->
+    <div id="skipNav">
+        <a class="skipBookInfo" href="#bookInfo">책정보</a>
+        <a class="skipBookAnno" href="#bookAnno">책소개</a>
+        <a class="skipItem" href="#bookItem">품목정보</a>
+    </div>
+    <!-- 건너뛰기 링크 종료 -->
+    <div id="wrapper">
+        <!-- 헤더 영역 -->
+        <header>
+            <!--로고, 검색, 아이콘 영역 시작 -->
+            <div id="titleOut">
+                <div id="title">
+                    <!-- 로고 영역 시작-->
+                    <h1><a href="../index.html"><img src="../images/title/PacaBooks-hor.png" alt="logo"></a></h1>
+                    <!-- 로고 영역 종료 -->
+                    <!-- /////////////////////////////////////-->
+                    <!-- 검색 영역 시작 -->
+                    <div id="search">
+                        <h2 class="hidden">책 검색</h2>
+                        <form action="search.jsp" method="get" id="searchForm">
+                            <fieldset>
+                                <legend>검색창</legend>
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i><span class="hidden">검색</span></button>
+                                <input type="search" id="keyword" name="keyword" required>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <!-- 검색 영역 종료 -->
+                    <!--/////////////////////////////////////-->
+                    <!-- 아이콘 영역 시작 -->
+                    <div id="mainIcon">
+                        <h2 class="hidden">메인 아이콘</h2>
+                        <ul>
+                            <li class="notice"><i class="fa fa-bell" aria-hidden="true"></i><span class="hidden">알림</span></li>
+                            <div class="myNotice">
+                                <ul>
+                                    <li>알림이 없습니다.</li>
+                                </ul>
+                            </div>
+                            <li class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="hidden">카트</span></li>
+                            <div class="myCart">
+                                <ul>
+                                    <li>카트가 비어있습니다.</li>
+                                </ul>
+                            </div>
+                            <li><a href="../login.html"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden">마이페이지</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- 아이콘 영역 종료 -->
+                </div>
+            </div>
+            <!--로고, 검색, 아이콘 영역 종료 -->
+            <!--//////////////////////////////////////////////////-->
+            <!-- 메뉴바 영역 시작 -->
+            <nav id="menuBar">
+                <div class="dropDown">
+                    <h2><i class="fa fa-bars" aria-hidden="true"></i><span class="hidden">메뉴바</span></h2>
+                    <div class="menuBar_drop">
+                        <a href="#">소설</a>
+                        <a href="#">에세이/시</a>
+                        <a href="#">인문/사회/역사</a>
+                        <a href="#">만화</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- 메뉴바 영역 종료 -->
+
+        </header>
+        <!-- 헤더 영역 종료 -->
+        
+        
+        <!------------------------------------------------------------->
+
+        <!-- 책 내용 영역 시작 -->
+            <!-- 책정보 영역 시작 -->
+        <section id="bookInfo">
+            <h2 class="hidden">책 정보</h2>
+            <div class="bookCover">
+                <div class="bookImg">
+                    <img src="../images/dayBest/작별인사.jpg" alt="작별인사">
+                    <div class="prevCover"><span><i class="fa fa-book" aria-hidden="true"></i> 미리보기</div></span>
+                    <!--<div class="prvBtn"><i class="fa fa-book" aria-hidden="true"></i> 미리보기</div>-->
+                </div>
+            </div>
+            <div class="bookExp">
+                <h3 class="title">작별인사</h3>
+                <p class="category">소설 <strong>&gt;</strong> 한국소설 <strong>&gt;</strong> 한국 장편소설</p>
+                <p class="writer">김영하 저</p>
+                <p class="publisher">복복서가</p>
+
+                <div class="event">
+                    <h3>결제 혜택</h3><span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/hyundailogo.png" alt="">
+                                <p><strong>현대카드 5% 즉시할인</strong><br>1만원 이상 결제시</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/kakaopay.png" alt="">
+                                <p><strong>카카오페이 5천원 할인</strong><br>5만원 이상 결제시, 1회</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/bclogo.png" alt="">
+                                <p><strong>BC카드 6% 즉시할인</strong><br>BC모바일 결제시</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form>
+                    <label>수량</label></span><input type="number" name="bookCount" id="bookCount" value="1" min="1" max="10">
+                </form>
+
+                <table id="priceTable">
+                    <tr><th rowspan="2">구매가</th><td>정가</td><td class="oriPrice">14000원</td></tr>
+                    <tr><td>할인가</td><td class="disPrice">12600원</td></tr>
+                </table>
+
+            </div>
+
+        </section>
+            <!-- 책정보 영역 종료 -->
+
+            <!-- 상단바 구매버튼 영역 시작 -->
+        <section id="upperBar">
+            <h2 class="hidden">상단 구매버튼 바</h2>
+            <div class="barArea">
+                <h3>작별인사</h3>
+                <p class="category">소설 <strong>&gt;</strong> 한국소설 <strong>&gt;</strong> 한국 장편소설</p>
+                <div class="btnArea">
+                    <button>구매하기</button>
+                    <button>장바구니</button>
+                </div>
+            </div>
+        </section>
+            <!-- 상단바 구매버튼 영역 종료 -->
+
+
+            <!-- 책 설명 영역 시작 -->
+        <section id="bookAnno">
+            <h2>책 소개</h2>
+            
+            <p><strong>누구도 도와줄 수 없는 상황, 혼자 헤쳐나가야 한다<br>지켜야 할 약속, 붙잡고 싶은 온기</strong><br></p>
+            <p>김영하가 『살인자의 기억법』 이후 9 년 만에 내놓는 장편소설 『작별인사』는 그리 멀지 않은 미래를 배경으로, 별안간 삶이 송두리째 뒤흔들린 한 소년의 여정을 좇는다. 유명한 IT 기업의 연구원인 아버지와 쾌적하고 평화롭게 살아가던 철이는 어느날 갑자기 수용소로 끌려가 난생처음 날것의 감정으로 가득한 혼돈의 세계에 맞닥뜨리게 되면서 정신적, 신체적 위기에 직면한다. 동시에 자신처럼 사회에서 배제된 자들을 만나 처음으로 생생한 소속감을 느끼고 따뜻한 우정도 싹틔운다. 철이는 그들과 함께 수용소를 탈출하여 집으로 돌아가기 위해 길을 떠나지만 그 여정에는 피할 수 없는 질문이 기다리고 있다.<br><br><br>
+                세계보건기구 WHO가 팬데믹을 선언한 지 2년이 지나서야 작가는 『작별인사』의 개작을 마쳤다. 420매 분량이던 원고는 약 800매로 늘었고, 주제도 완전히 달라졌다. ‘인간을 인간으로 만드는 것은 무엇인가?’, ‘인간과 인간이 아닌 존재들을 가르는 경계는 어디인가’를 묻던 소설은 ‘삶이란 과연 계속될 가치가 있는 것인가?’, ‘세상에 만연한 고통을 어떻게 하면 줄일 수 있을 것인가’, ‘어쩔 수 없이 태어났다면 어떻게 살고 어떻게 죽어야 할 것인가’와 같은 질문을 던지는 이야기로 바뀌었다. 팬데믹이 개작에 영향을 주었을 수도 있고, 원래 『작별인사』의 구상에 담긴 어떤 맹아가 오랜 개작을 거치며 발아했는지도 모른다. 그것에 대해 작가는 이렇게 말하고 있다.</p>
+            <!-- <img src="../images/bookInfo/저만치혼자서info.jpg" alt="저만치혼자서 책 이미지"> -->
+        </section>
+            <!-- 책 설명 영역 종료 -->
+
+            <!-- 책 품목정보 영역 시작 -->
+        <section id="bookItem">
+            <h2>품목정보</h2>
+            <table>
+                <tr><th>출간일</th><td>2022년 06월 20일</td></tr>
+                <tr><th>쪽수, 무게, 크기</th><td>264쪽 | 368g | 128*188*20mm</td></tr>
+                <tr><th>ISBN13</th><td>9788954686921</td></tr>
+                <tr><th>ISBN10</th><td>8954686923</td></tr>
+
+            </table>
+        </section>
+
+            <!-- 책 품목정보 영역 종료 -->
+
+        <!-- 책 내용 영역 종료  -->
+
+
+
+
+
+
+
+
+
+        <!--------------------------------------------------------------->
+
+        <!-- footer 영역 시작 -->
+        <footer>
+            <div id="footerInner">
+                <!-- 상단 리스트 시작 -->
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">제휴·제안</a></li>
+                    <li><a href="#">광고센터</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">서비스 전체보기</a></li>
+                </ul>
+                <!-- 상단 리스트 종료 -->
+                <!--////////////////////////////////////-->
+                <!-- 주소 영역 시작 -->
+                <address>
+                    <span>서울시 종로구 123-12 한주빌딩 5층</span>
+                    <span> · 대표전화: 02-123-4567 (발신자 부담전화)</span>
+                    <span> · 서울특별시 통신판매업신고번호 : 제 123호 ▶<a href="#">사업자 정보확인</a></span>
+                </address>
+                <!--저작권 정보-->
+                <p class="copyright">copyright since &copy; 2022 <br>by PacaBooks CORPORATION ALL RIGHTS RESERVED</p>
+                <!-- 주소 영역 종료 -->
+            </div>
+        </footer>
+        <!-- footer 영역 시작 -->
+    </div>
+    <!-- wrapper 종료-->
+</body>
+
+<script>
+    $('#bookInfo .bookImg').click(function(){
+        window.open('../book_prev/goodbye_prev.html','미리보기','width=1180,height=750');
+    });
+</script>
+</html>

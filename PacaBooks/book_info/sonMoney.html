@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PacaBooks | 아들아 돈 공부해야 한다</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/bookinfo.css">
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../images/paca_icon.ico">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bookinfo.js"></script>
+    <script src="../js/common.js"></script>
+
+
+        <!--웹폰트 링크 연결-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <!-- 건너뛰기 링크 (Tab키로 영역링크 / 웹 접근성) -->
+    <!-- 내부점프 a태그 -->
+    <div id="skipNav">
+        <a class="skipBookInfo" href="#bookInfo">책정보</a>
+        <a class="skipBookAnno" href="#bookAnno">책소개</a>
+        <a class="skipItem" href="#bookItem">품목정보</a>
+    </div>
+    <!-- 건너뛰기 링크 종료 -->
+    <div id="wrapper">
+        <!-- 헤더 영역 -->
+        <header>
+            <!--로고, 검색, 아이콘 영역 시작 -->
+            <div id="titleOut">
+                <div id="title">
+                    <!-- 로고 영역 시작-->
+                    <h1><a href="../index.html"><img src="../images/title/PacaBooks-hor.png" alt="logo"></a></h1>
+                    <!-- 로고 영역 종료 -->
+                    <!-- /////////////////////////////////////-->
+                    <!-- 검색 영역 시작 -->
+                    <div id="search">
+                        <h2 class="hidden">책 검색</h2>
+                        <form action="search.jsp" method="get" id="searchForm">
+                            <fieldset>
+                                <legend>검색창</legend>
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i><span class="hidden">검색</span></button>
+                                <input type="search" id="keyword" name="keyword" required>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <!-- 검색 영역 종료 -->
+                    <!--/////////////////////////////////////-->
+                    <!-- 아이콘 영역 시작 -->
+                    <div id="mainIcon">
+                        <h2 class="hidden">메인 아이콘</h2>
+                        <ul>
+                            <li class="notice"><i class="fa fa-bell" aria-hidden="true"></i><span class="hidden">알림</span></li>
+                            <div class="myNotice">
+                                <ul>
+                                    <li>알림이 없습니다.</li>
+                                </ul>
+                            </div>
+                            <li class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="hidden">카트</span></li>
+                            <div class="myCart">
+                                <ul>
+                                    <li>카트가 비어있습니다.</li>
+                                </ul>
+                            </div>
+                            <li><a href="../login.html"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden">마이페이지</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- 아이콘 영역 종료 -->
+                </div>
+            </div>
+            <!--로고, 검색, 아이콘 영역 종료 -->
+            <!--//////////////////////////////////////////////////-->
+            <!-- 메뉴바 영역 시작 -->
+            <nav id="menuBar">
+                <div class="dropDown">
+                    <h2><i class="fa fa-bars" aria-hidden="true"></i><span class="hidden">메뉴바</span></h2>
+                    <div class="menuBar_drop">
+                        <a href="#">소설</a>
+                        <a href="#">에세이/시</a>
+                        <a href="#">인문/사회/역사</a>
+                        <a href="#">만화</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- 메뉴바 영역 종료 -->
+
+        </header>
+        <!-- 헤더 영역 종료 -->
+        
+        
+        <!------------------------------------------------------------->
+
+        <!-- 책 내용 영역 시작 -->
+            <!-- 책정보 영역 시작 -->
+        <section id="bookInfo">
+            <h2 class="hidden">책 정보</h2>
+            <div class="bookCover">
+                <div class="bookImg">
+                    <img src="../images/dayBest/아들아_돈공부_해야한다.jpg" alt="아들아 돈 공부해야 한다">
+                    <div class="prevCover"><span><i class="fa fa-book" aria-hidden="true"></i> 미리보기</div></span>
+                    <!--<div class="prvBtn"><i class="fa fa-book" aria-hidden="true"></i> 미리보기</div>-->
+                </div>
+            </div>
+            <div class="bookExp">
+                <h3 class="title">아들아, 돈 공부해야 한다</h3>
+                <p class="category">국내도서 <strong>&gt;</strong> 경제/경영 <strong>&gt;</strong> 경제</p>
+                <p class="writer">정선용 저</p>
+                <p class="publisher">알에이치코리아(RHK)</p>
+
+                <div class="event">
+                    <h3>결제 혜택</h3><span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/hyundailogo.png" alt="">
+                                <p><strong>현대카드 5% 즉시할인</strong><br>1만원 이상 결제시</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/kakaopay.png" alt="">
+                                <p><strong>카카오페이 5천원 할인</strong><br>5만원 이상 결제시, 1회</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/bookInfo/dicount_logo/bclogo.png" alt="">
+                                <p><strong>BC카드 6% 즉시할인</strong><br>BC모바일 결제시</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form>
+                    <label>수량</label></span><input type="number" name="bookCount" id="bookCount" value="1" min="1" max="10">
+                </form>
+
+                <table id="priceTable">
+                    <tr><th rowspan="2">구매가</th><td>정가</td><td class="oriPrice">15800원</td></tr>
+                    <tr><td>할인가</td><td class="disPrice">14220원</td></tr>
+                </table>
+
+            </div>
+
+        </section>
+            <!-- 책정보 영역 종료 -->
+
+            <!-- 상단바 구매버튼 영역 시작 -->
+        <section id="upperBar">
+            <h2 class="hidden">상단 구매버튼 바</h2>
+            <div class="barArea">
+                <h3>아들아, 돈 공부해야 한다</h3>
+                <p class="category">국내도서 <strong>&gt;</strong> 경제/경영 <strong>&gt;</strong> 경제</p>
+                <div class="btnArea">
+                    <button>구매하기</button>
+                    <button>장바구니</button>
+                </div>
+            </div>
+        </section>
+            <!-- 상단바 구매버튼 영역 종료 -->
+
+
+            <!-- 책 설명 영역 시작 -->
+        <section id="bookAnno">
+            <h2>책 소개</h2>
+            
+            <p><strong>“직원으로 시작해라. 그러나 직원으로 살지 마라”<br>151만 ‘부동산 스터디’ 카페가 열광한 화제의 칼럼</strong><br></p>
+            <p>151만 ‘부동산 스터디’ 카페가 애타게 기다린 『아들아, 돈 공부해야 한다』가 출간되었다. 『아들아, 돈 공부해야 한다』는 50억 자산가 아버지가 자녀에게 경제의 기본 원리와 부의 노하우를 전하는 책이다. 저자는 25년간 유통업계에 종사하며 롯데마트 가정간편식 부문장(상무) 등을 지냈다. 대한민국 대형마트의 태동과 성장, 침체의 역사를 함께하며, 실생활의 경제 원리를 깨우쳤다. 자본주의의 최첨단에서 유통의 역사를 새로이 써 온 저자는, 근로 소득만으로는 점점 더 가난해지는 현실에 눈을 뜨고, 근로 소득을 자본 소득으로 전환해 50억 자산가가 되었다.<br><br><br>
+                저자는 살아있는 현실 경제 이야기를 전하고자, 2020년 10월부터 네이버 카페 ‘부동산 스터디’에 ‘아들아 경제 공부해야 한다’ 시리즈를 연재했다. 연재 글은 뜨거운 호응과 함께 누적 100만 조회 수를 기록했으며, 특히 가수 나훈아를 자본 소득, 가수 남진을 근로 소득에 비유해 그 차이를 밝힌 ‘소득편’이 많은 사랑을 받았다. ‘제발 책을 내달라’는 요청이 잇따르고, 캡처 혹은 출력해 아이에게 전 편을 읽혔다는 간증이 속출했다. 151만 회원이 검증한 책, 『아들아, 돈 공부해야 한다』는 독자들에게 삶을 바꾸는 긍정 경험을 선사할 것이다.</p>
+            <img src="../images/bookInfo/아들아 돈 공부 해야한다 info.jpg" alt="아들아 돈 공부 해야한다 책 이미지">
+        </section>
+            <!-- 책 설명 영역 종료 -->
+
+            <!-- 책 품목정보 영역 시작 -->
+        <section id="bookItem">
+            <h2>품목정보</h2>
+            <table>
+                <tr><th>출간일</th><td>2021년 03월 25일</td></tr>
+                <tr><th>쪽수, 무게, 크기</th><td>304쪽 | 484g | 148*210*17mm</td></tr>
+                <tr><th>ISBN13</th><td>9788925588902</td></tr>
+                <tr><th>ISBN10</th><td>8925588900</td></tr>
+
+            </table>
+        </section>
+
+            <!-- 책 품목정보 영역 종료 -->
+
+        <!-- 책 내용 영역 종료  -->
+
+
+
+
+
+
+
+
+
+        <!--------------------------------------------------------------->
+
+        <!-- footer 영역 시작 -->
+        <footer>
+            <div id="footerInner">
+                <!-- 상단 리스트 시작 -->
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">제휴·제안</a></li>
+                    <li><a href="#">광고센터</a></li>
+                    <li><a href="#">채용정보</a></li>
+                    <li><a href="#">서비스 전체보기</a></li>
+                </ul>
+                <!-- 상단 리스트 종료 -->
+                <!--////////////////////////////////////-->
+                <!-- 주소 영역 시작 -->
+                <address>
+                    <span>서울시 종로구 123-12 한주빌딩 5층</span>
+                    <span> · 대표전화: 02-123-4567 (발신자 부담전화)</span>
+                    <span> · 서울특별시 통신판매업신고번호 : 제 123호 ▶<a href="#">사업자 정보확인</a></span>
+                </address>
+                <!--저작권 정보-->
+                <p class="copyright">copyright since &copy; 2022 <br>by PacaBooks CORPORATION ALL RIGHTS RESERVED</p>
+                <!-- 주소 영역 종료 -->
+            </div>
+        </footer>
+        <!-- footer 영역 시작 -->
+    </div>
+    <!-- wrapper 종료-->
+</body>
+
+<script>
+    $('#bookInfo .bookImg').click(function(){
+        window.open('../book_prev/sonMoney_prev.html','미리보기','width=1180,height=750');
+    });
+</script>
+</html>

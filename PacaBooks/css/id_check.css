@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+
+body{
+    background-color: #fefbf3;
+}
+#idCheckBox {
+    width: 380px;
+    height: 280px;
+}
+fieldset{
+    height: 250px;
+}
+#idCheck {
+    padding: 5px 10px;
+}
+button {
+    padding: 5px 10px;
+    border: 1px solid #9d9d9d;
+    border-radius: 5px;
+}
+#result {
+    margin-top: 10px;
+}
+.use {
+    display: none;
+}
+#result strong{
+    color: #f00;
+}
