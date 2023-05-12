@@ -17,7 +17,7 @@
              
            백엔드
            
-             ▶ java
+             ▶ java (jsp)
              
 * 웹 서버 : Apache Tomcat
 
